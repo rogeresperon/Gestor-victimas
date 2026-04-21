@@ -1,0 +1,50 @@
+        #accesibilidadGob {
+            width: 1.3rem;
+            padding-top: .2rem;
+        }
+        #accessibility {
+            background: transparent;
+        }
+        #accessibility,
+        .menu-btn {
+            position: relative !important;
+            right: auto !important;
+            top: auto !important;
+        }
+
+        .menu-container .menu-btn {
+            z-index: inherit;
+        }
+
+        #accessibility,
+        .menu-btn {
+            position: relative !important;
+            right: auto !important;
+            top: auto !important;
+        }
+
+        #accessibility,
+        .menu-btn {
+            position: relative !important;
+            right: auto !important;
+            top: auto !important;
+        }
+
+        /* 1. Anulamos el hover original para que no interfiera */
+        .menu-container:hover .menu-slide {
+            transform: translate(0, 0) !important;
+            /* O el valor que tenga por defecto cuando está oculto */
+            opacity: 0 !important;
+            pointer-events: none;
+            /* Evita que se pueda clickear si está invisible */
+        }
+
+        /* 2. Definimos el estado ACTIVO mediante click */
+        .menu-container.is-active .menu-slide {
+            transform: translate(270px, 0) !important;
+            /* El valor original de tu hover */
+            opacity: 1 !important;
+            pointer-events: auto;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+            /* Para que sea suave */
+        }

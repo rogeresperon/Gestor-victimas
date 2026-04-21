@@ -1,0 +1,24 @@
+/*BASE*/
+@import "base/_tema-guinda.css";
+@import "base/_color.css";
+@import "base/_normalize.css";
+@import "base/_config.css";
+@import "base/_layout.css";
+@import "base/_accesibilidadGobMx.css";
+@import "base/_filas-columnas.css";
+
+/*COMPONENTES BÁSICOS*/
+@import "componentes/_bandeja-filtros.css";
+@import "componentes/_boton.css";
+@import "componentes/_cajas.css";
+@import "componentes/_forms.css";
+@import "componentes/_paginacion.css";
+@import "componentes/_pildora.css";
+@import "componentes/_tablas.css";
+
+/*HELPERS*/
+@import "base/_helpers.css";
+
+/*PERSONALIZAR*/
+@import "personalizar/_gestor.css";
+

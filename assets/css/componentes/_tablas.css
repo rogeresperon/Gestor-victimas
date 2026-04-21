@@ -1,0 +1,248 @@
+/*Generales*/
+.tabla--100 { width:100%;}
+/*section y botonera*/
+.tabla__section {  max-width:100%; width:100%; overflow-x:auto}
+.tabla__botonera { display:flex; flex-direction:row; column-gap:1rem; align-items:center; justify-content:flex-end; margin:1rem 0;}
+.tabla__botonera--izq { justify-content:flex-start; }
+/*alineación*/
+.td--center, .th--center  { text-align:center;}
+.th--center div { justify-content: center;}
+.td--right, .th--right { text-align:right;}
+/*td .pildora { width:100%;} */
+
+/*botón ordenar*/
+.tabla__ordenar { border:none; background:none; display:flex; flex-direction:column; font-size:0.75rem; font-weight:600; padding:0; cursor: pointer; border-radius:8px; color:var(--principal); }
+.tabla__ordenar:hover { background:rgba(0, 0, 0, 0.2);}
+
+/*botón ver más acciones*/
+.tabla__vermas { margin:auto; list-style-type:none; position: relative;}
+.tabla__vermasSummary { list-style-type:none; display:flex; flex-direction:column; gap:2px; font-size:0.75rem;  font-weight:600; align-items:center; border-radius:.5rem; color:var(--principal); padding:4px 2px; text-align:center;}
+.tabla__vermasIcono { filter:var(--filtroPrimario); height:24px; }
+.tabla__vermas[open] .tabla__vermasSummary { background:var(--neutro300);}
+.tabla__vermasUl { list-style-type:none; border-radius:16px; box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25); padding:16px; border:solid 1px #EEE; background:#FFF; position:absolute; right:0; z-index:1; }
+.tabla__vermasUl--absolute { position:absolute; right:calc(100% + 16px); margin:0; top:-8px;}
+.tabla__vermasUl * { color:var(--neutro800); text-decoration:none; font-size:1rem;}
+.tabla__vermasLink,
+.tabla__vermasBoton { display:flex; flex-direction:row; align-items:center; justify-content: flex-start; padding:.5rem; column-gap:.5rem; border:none; border-radius:.5rem; text-align:left; white-space:nowrap; background:none; cursor:pointer; color:var(--primario);}
+.tabla__vermasLink:hover,
+.tabla__vermasBoton:hover { background:var(--neutro300);}
+/*Posicionar el último boton de acciones*/
+.tabla01__tbodyTr:nth-last-of-type(1) .tabla__vermasUl--absolute,
+.tabla01__tbodyTr:nth-last-of-type(2) .tabla__vermasUl--absolute { bottom:0; top:unset;}
+
+/*TABLA 01*/
+.tabla01  { border-collapse:separate; border-radius:.5rem; border-spacing: 0; border:1px solid var(--neutro100);}
+.tabla01__caption { font-size:1.25rem; font-weight:600; color:var(--neutro800); caption-side: top; position:sticky; left:0}
+.tabla01__theadTh { color:#FFF; font-size:0.875rem; font-weight:600; padding:0.875rem .5rem; vertical-align:middle; background:var(--pguinda900);}
+.tabla01__theadTh div { display:flex; align-items:center; column-gap:4px;  justify-content:space-between;}
+.tabla01__theadTh div span { text-align:center; flex-grow:1}
+.tabla01__tbodyTh,
+.tabla01__tbodyTd { padding:1rem .5rem; background:#FFF; font-weight:normal; vertical-align:top;}
+.tabla01__checkbox { min-width:1.5rem; }
+.tabla01__checkbox label { justify-content:center;}
+.tabla01__acciones {  display:flex; column-gap:8px;}
+.tabla01__acciones .boton__vertical { padding:4px 8px; }
+/*border radius*/
+.tabla01__theadTh:first-of-type { border-top-left-radius:.5rem;}
+.tabla01__theadTh:last-of-type   { border-top-right-radius:.5rem}
+.tabla01__tbodyTr:last-of-type [class*="tabla01__tbody"]:first-child { border-bottom-left-radius:.5rem;}
+.tabla01__tbodyTr:last-of-type td:last-of-type  { border-bottom-right-radius:.5rem}
+
+/*RESPONSIVO*/
+.tablaResponsiva--horizontal {overflow-x:auto; padding-bottom:1rem; position:relative; width:100%; scrollbar-width:thin; scrollbar-color:var(--pguinda600) var(--neutro300); -webkit-overflow-scrolling: touch; cursor: grab; user-select: none;}
+.tablaResponsiva--horizontal:active { cursor: grabbing;}
+.tablaResponsiva--horizontal table { border-collapse:separate; border-spacing:0; width:100%}
+.tablaResponsiva__colFija {position:sticky; left:0;}
+.tablaResponsiva__colFija--end { position:sticky; right:0; box-shadow:-3px 0px 3px -3px rgba(0, 0, 0, 0.25)}
+td.tablaResponsiva__colFija--end { border-left:1px solid #CCC; border-right:1px solid #DDD;}
+tbody .tablaResponsiva__colFija:first-child {border-left:solid 1px var(--neutro500);}
+/*sombreado*/
+.colFija--sombreado { box-shadow:3px 0px 3px rgba(0, 0, 0, 0.25);}
+.tabla01--checkbox tr .tablaResponsiva__colFija:last-of-type,
+.tabla01__checkbox + th {left:2rem;}
+
+/*TABLA 01 gris*/
+.tabla01--gris .tabla01__theadTh { background:var(--neutro400); color:var(--neutro800);}
+
+
+/* Estilo cebra para la tabla */
+.tabla01--tablaCebra tr td
+.tabla01--tablaCebra tbody tr:nth-child(even) th {background-color: var(--neutro400);}
+
+
+/* Estilo tabla border bottom */
+.tabla01--tablaBordeB  tr td, 
+.tabla01--tablaBordeB th, .tabla01--tablaBordeB td {border-bottom: 1px solid var(--neutro400);border-left: none !important;text-align: start;}
+
+
+/* ===== TABLA 01 | MODIFICADOR head ===== */
+.tabla01__thead--gris .tabla01__theadTh,
+.tabla01__thead--gris .tabla01__theadTd { color: var(--neutro700); background: #FFF;font-size: 16px;font-weight: 500;border-bottom: none;}
+
+/* ===== TABLA 01 | MODIFICADOR BOLD ===== */
+.tabla01--bold .tabla01__tbodyTh,
+.tabla01--bold .tabla01__tbodyTd {
+  font-weight: 700;
+}
+
+
+/* Contenedor del borde de la tabla */
+.tabla01--tablaCebra {
+  border: 1px solid var(--neutro500);
+  border-radius: .5rem;
+  overflow-x: auto;      /* mantiene el scroll */
+  background: #fff;
+}
+
+/* Primera columna fija al 5% */
+.w5 {
+  width: 5%;
+  min-width: 5%;
+  max-width: 5%;
+  text-align: center;
+}
+
+/* Segunda columna fija al 10% */
+.w10 {
+  width: 10%;
+  min-width: 10%;
+  max-width: 10%;
+
+}
+
+@media (max-width:650px) {
+    .tabla__botonera { margin-top:1.5rem; flex-direction:column; row-gap:1rem; align-items:start;}
+    .tabla__botonera button, .tabla__botonera a { flex-grow:1;}
+    .tabla01--checkbox tr .tablaResponsiva__colFija:last-of-type, .tabla01__checkbox + th {width: 80%;}
+}
+
+/*TABLA cuando se mete en un tab para que se muestre correctamente en movil*/
+.tabla__section--tab { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+  overflow-x: auto;}
+
+
+/*TABLA OVERFLOW*/
+.tabla__overflow--on {overflow-x:auto;}
+.tabla__overflow--on .tabla__vermasUl { position:fixed; bottom:0; width:100vw; left:0; border-radius:16px 16px 0 0; margin:0; z-index:2;}
+
+
+/* =========================================
+   COMPONENTE ESPECIAL
+   Tabla responsiva + columna fija + menú flotante
+   No modifica el CSS original, solo lo sobreescribe
+   dentro de .tablaComponenteEspecial
+========================================= */
+
+.tablaComponenteEspecial {
+  overflow: visible;
+}
+
+.tablaComponenteEspecial.tabla__section {
+  overflow: visible;
+}
+
+.tablaComponenteEspecial .tablaResponsiva--horizontal {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.tablaComponenteEspecial .tablaResponsiva--horizontal table {
+  width: max-content;
+  min-width: 100%;
+}
+
+/* Columna fija */
+.categorias .tabla01__tbodyTh {
+  text-align: left !important;
+}
+.tablaComponenteEspecial .tablaComponenteEspecial__colFija {
+  z-index: 2;
+  background: #fff;
+}
+
+.tablaComponenteEspecial thead .tablaComponenteEspecial__colFija {
+  z-index: 5;
+  background: var(--pguinda900);
+}
+
+.tablaComponenteEspecial tbody .tablaComponenteEspecial__colFija:first-child {
+  border-left: solid 1px var(--neutro500);
+}
+
+.tablaComponenteEspecial .tablaComponenteEspecial__colFija--sombreado {
+  box-shadow: 3px 0 6px rgba(0, 0, 0, 0.18);
+}
+
+/* Menú especial */
+.tablaComponenteEspecial .tablaComponenteEspecial__menu {
+  z-index: 3;
+}
+
+.tablaComponenteEspecial .tablaComponenteEspecial__menu[open] {
+  z-index: 30;
+}
+
+.tablaComponenteEspecial .tablaComponenteEspecial__summary {
+  cursor: pointer;
+  user-select: none;
+}
+
+.tablaComponenteEspecial .tablaComponenteEspecial__summary::-webkit-details-marker {
+  display: none;
+}
+
+.tablaComponenteEspecial .tablaComponenteEspecial__lista {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  min-width: max-content;
+  margin: 0;
+  padding: 16px;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18);
+  border: solid 1px #eee;
+  background: #fff;
+  display: none;
+}
+
+.tablaComponenteEspecial .tablaComponenteEspecial__menu[open] .tablaComponenteEspecial__lista {
+  display: block;
+}
+
+/* Backdrop del componente */
+.tablaComponenteEspecial__backdrop {
+  position: fixed;
+  inset: 0;
+  background: transparent;
+  z-index: 9998;
+  display: none;
+}
+
+.tablaComponenteEspecial__backdrop.activo {
+  display: block;
+}
+
+@media (max-width: 650px) {
+  .tablaComponenteEspecial .tabla01__theadTh,
+  .tablaComponenteEspecial .tabla01__tbodyTh,
+  .tablaComponenteEspecial .tabla01__tbodyTd {
+    min-width: 10rem;
+  }
+
+  .tablaComponenteEspecial .tablaComponenteEspecial__colFija {
+    min-width: 14rem;
+    max-width: 14rem;
+  }
+
+  .tablaComponenteEspecial__backdrop.activo {
+    background: rgba(0, 0, 0, 0.28);
+  }
+}
+
+
+/*TABLA VERDE*/
+.tabla--verde .tabla01__theadTh { background:var(--pverde600); }
+.tabla--verde .tabla01__theadTh:not(:last-of-type) { border-right:solid 1px var(--pverde800)}
+.tabla--verde.tablaResponsiva--horizontal { scrollbar-width:initial; scrollbar-color:var(--neutro700) var(--neutro400);}

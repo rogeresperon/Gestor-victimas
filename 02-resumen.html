@@ -1,0 +1,1658 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Gestor de víctimas y stock</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="DESCRIPCIÓN">
+    <meta name="keywords" content="PALABRAS CLAVE">
+    <meta property="og:title" content="Gestor de víctimas y stock">
+    <meta property="og:description" content="DESCRIPCIÓN">
+
+    <!-- LA RUTA DE LA IMAGEN OG:IMG DEBE SER ABSOLUTA  -->
+    <meta property="og:image" content="./assets/img/og-img.png">
+    <link rel="shortcut icon" href="https://www.gob.mx/resources/img/favicon.ico">
+
+    <!-- Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://framework-gb.cdn.gob.mx/gm/accesibilidad/css/gobmx-accesibilidad.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/estilos.css">
+
+</head>
+
+<body>
+
+    <div class="wrapper--aside wrapper--ancho">
+
+        <!-- HEADER -->
+        <header class="header">
+            <!--Lleva al contenido principal cuando se navega con tabulador-->
+            <a class="irContent" href="#mainContent">Ir al contenido principal</a>
+
+            <section class="mexico">
+                <div class="mexico__contenedor">
+                    <div class="mexico__escudo">
+                        <a href="https://www.gob.mx/" class="mexico__aescudo">
+                            <img src="./assets/img/gobierno-mexico.svg" class="mexico__img"
+                                alt="Ir a la página de inicio del Gobierno de México">
+                        </a>
+                    </div>
+                    <div class="mexico__menu">
+                        <details class="mexico__details" open>
+                            <summary class="mexico__summary">
+                                <span class="mexico__span">Menú</span>
+                            </summary>
+                            <div class="mexico__detailsCont">
+                                <a href="https://www.gob.mx/tramites" class="mexico__a">Trámites</a>
+                                <a href="https://www.gob.mx/gobierno" class="mexico__a">Gobierno</a>
+                                <a href="https://www.gob.mx/" class="mexico__a" target="_blank" rel="noopener"
+                                    title="Ir a la página de búsqueda del Gobierno de México"><img
+                                        src="./assets/icons-base/header-lupa.svg" alt=""></a>
+                            </div>
+                        </details>
+                    </div>
+                </div>
+            </section>
+            <section class="subheader">
+                <div class="subheader__contenedor">
+
+                    <!-- class=detailsClickOut cierra Details si se cliquea fuera-->
+                    <details class="usrperfil__details detailsClickOut">
+                        <summary class="usrperfil__summary">
+                            <span class="usrperfil__summaryCol1">
+                                <span class="usrperfil__iniciales">MA</span>
+                                <span class="usrperfil__nombre">María Concepción</span>
+                            </span>
+                            <svg class="usrperfil__summaryIcon details__flecha" focusable="false"
+                                preserveAspectRatio="xMidYMid meet" fill="currentColor" width="24" height="24"
+                                viewBox="0 0 32 32" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16 22L6 12 7.4 10.6 16 19.2 24.6 10.6 26 12z"></path>
+                            </svg>
+
+                        </summary>
+                        <div class="usrperfil__cont">
+                            <ul class="usrperfil__ul">
+
+                                <!-- BLOQUE NORMAL-->
+                                <li class="usrperfil__li usrperfil__li--perfil">
+                                    <span class="usrperfil__iniciales">MA</span>
+                                    <div class="dflex--col">
+                                        <span class="usrperfil__nombre2">María Concepción</span>
+                                        <span class="usrperfil__rol">Perfil Ciudadano</span>
+                                    </div>
+                                </li>
+
+                                <li class="usrperfil__li">
+                                    <a href="#" class="usrperfil__opcion">
+                                        <svg class="usrperfil__icono" focusable="false"
+                                            preserveAspectRatio="xMidYMid meet" fill="currentColor" viewBox="0 0 32 32"
+                                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M16,8a5,5,0,1,0,5,5A5,5,0,0,0,16,8Zm0,8a3,3,0,1,1,3-3A3.0034,3.0034,0,0,1,16,16Z">
+                                            </path>
+                                            <path
+                                                d="M16,2A14,14,0,1,0,30,16,14.0158,14.0158,0,0,0,16,2ZM10,26.3765V25a3.0033,3.0033,0,0,1,3-3h6a3.0033,3.0033,0,0,1,3,3v1.3765a11.8989,11.8989,0,0,1-12,0Zm13.9925-1.4507A5.0016,5.0016,0,0,0,19,20H13a5.0016,5.0016,0,0,0-4.9925,4.9258,12,12,0,1,1,15.985,0Z">
+                                            </path>
+                                        </svg>
+                                        <div class="usrperfil__opcionCol">
+                                            Mi perfil
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li class="usrperfil__li">
+                                    <a href="#" class="usrperfil__opcion">
+                                        <svg class="usrperfil__icono" focusable="false"
+                                            preserveAspectRatio="xMidYMid meet" fill="currentColor" viewBox="0 0 32 32"
+                                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M6 21V20H4v1a7 7 0 007 7h3V26H11A5 5 0 016 21zM24 11v1h2V11a7 7 0 00-7-7H16V6h3A5 5 0 0124 11zM11 11H5a3 3 0 00-3 3v2H4V14a1 1 0 011-1h6a1 1 0 011 1v2h2V14A3 3 0 0011 11zM8 10A4 4 0 104 6 4 4 0 008 10zM8 4A2 2 0 116 6 2 2 0 018 4zM27 25H21a3 3 0 00-3 3v2h2V28a1 1 0 011-1h6a1 1 0 011 1v2h2V28A3 3 0 0027 25zM20 20a4 4 0 104-4A4 4 0 0020 20zm6 0a2 2 0 11-2-2A2 2 0 0126 20z">
+                                            </path>
+                                        </svg>
+                                        <div class="usrperfil__opcionCol">
+                                            Cambiar perfil
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li class="usrperfil__li">
+                                    <a href="#"
+                                        class="usrperfil__opcion usrperfil__opcion--between usrperfil__opcion--noborde">
+                                        <div class="usrperfil__opcionCol">
+                                            Ir a Llave MX
+                                        </div>
+                                        <svg class="usrperfil__icono" focusable="false"
+                                            preserveAspectRatio="xMidYMid meet" fill="currentColor" viewBox="0 0 32 32"
+                                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M18 6L16.57 7.393 24.15 15 4 15 4 17 24.15 17 16.57 24.573 18 26 28 16 18 6z">
+                                            </path>
+                                        </svg>
+
+                                    </a>
+                                </li>
+
+                                <li class="usrperfil__li">
+                                    <a href="#" class="usrperfil__opcion usrperfil__opcion--noborde">
+                                        Cerrar sesión
+                                        <svg class="usrperfil__icono" focusable="false"
+                                            preserveAspectRatio="xMidYMid meet" fill="currentColor" viewBox="0 0 32 32"
+                                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M6,30H18a2.0023,2.0023,0,0,0,2-2V25H18v3H6V4H18V7h2V4a2.0023,2.0023,0,0,0-2-2H6A2.0023,2.0023,0,0,0,4,4V28A2.0023,2.0023,0,0,0,6,30Z">
+                                            </path>
+                                            <path
+                                                d="M20.586 20.586L24.172 17 10 17 10 15 24.172 15 20.586 11.414 22 10 28 16 22 22 20.586 20.586z">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                </li>
+
+
+
+                                <!-- BLOQUE CAMBIAR PERFIL-->
+                                <li class="usrperfil__li">
+                                    <a href="#"
+                                        class="usrperfil__opcion usrperfil__opcion--header usrperfil__opcion--noborde">
+                                        <svg class="usrperfil__icono" focusable="false"
+                                            preserveAspectRatio="xMidYMid meet" fill="currentColor" width="32"
+                                            height="32" viewBox="0 0 32 32" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M14 26L15.41 24.59 7.83 17 28 17 28 15 7.83 15 15.41 7.41 14 6 4 16 14 26z">
+                                            </path>
+                                        </svg>
+                                        <div class="usrperfil__opcionCol">
+                                            Cambiar perfil
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li class="usrperfil__li">
+                                    <a href="#" class="usrperfil__opcion usrperfil__opcion--between">
+                                        <div class="usrperfil__opcionCol">
+                                            Ciudadano
+                                            <span class="usrperfil__opcionSm">María Concepción</span>
+                                        </div>
+                                        <svg class="usrperfil__icono" focusable="false"
+                                            preserveAspectRatio="xMidYMid meet" fill="currentColor" viewBox="0 0 32 32"
+                                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M6 21V20H4v1a7 7 0 007 7h3V26H11A5 5 0 016 21zM24 11v1h2V11a7 7 0 00-7-7H16V6h3A5 5 0 0124 11zM11 11H5a3 3 0 00-3 3v2H4V14a1 1 0 011-1h6a1 1 0 011 1v2h2V14A3 3 0 0011 11zM8 10A4 4 0 104 6 4 4 0 008 10zM8 4A2 2 0 116 6 2 2 0 018 4zM27 25H21a3 3 0 00-3 3v2h2V28a1 1 0 011-1h6a1 1 0 011 1v2h2V28A3 3 0 0027 25zM20 20a4 4 0 104-4A4 4 0 0020 20zm6 0a2 2 0 11-2-2A2 2 0 0126 20z">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                </li>
+
+                                <li class="usrperfil__li">
+                                    <a href="#" class="usrperfil__opcion usrperfil__opcion--between">
+                                        <div class="usrperfil__opcionCol">
+                                            Funcionario
+                                            <span class="usrperfil__opcionSm">María Concepción</span>
+                                        </div>
+                                        <svg class="usrperfil__icono" focusable="false"
+                                            preserveAspectRatio="xMidYMid meet" fill="currentColor" viewBox="0 0 32 32"
+                                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M6 21V20H4v1a7 7 0 007 7h3V26H11A5 5 0 016 21zM24 11v1h2V11a7 7 0 00-7-7H16V6h3A5 5 0 0124 11zM11 11H5a3 3 0 00-3 3v2H4V14a1 1 0 011-1h6a1 1 0 011 1v2h2V14A3 3 0 0011 11zM8 10A4 4 0 104 6 4 4 0 008 10zM8 4A2 2 0 116 6 2 2 0 018 4zM27 25H21a3 3 0 00-3 3v2h2V28a1 1 0 011-1h6a1 1 0 011 1v2h2V28A3 3 0 0027 25zM20 20a4 4 0 104-4A4 4 0 0020 20zm6 0a2 2 0 11-2-2A2 2 0 0126 20z">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                </li>
+
+                                <li class="usrperfil__li">
+                                    <a href="#"
+                                        class="usrperfil__opcion usrperfil__opcion--between usrperfil__opcion--noborde">
+                                        <div class="usrperfil__opcionCol">
+                                            Persona moral
+                                        </div>
+                                        <svg class="usrperfil__icono" focusable="false"
+                                            preserveAspectRatio="xMidYMid meet" fill="currentColor" viewBox="0 0 32 32"
+                                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M18 6L16.57 7.393 24.15 15 4 15 4 17 24.15 17 16.57 24.573 18 26 28 16 18 6z">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                </li>
+
+
+                                <!-- BLOQUE PERSONA MORAL -->
+                                <li class="usrperfil__li">
+                                    <a href="#"
+                                        class="usrperfil__opcion usrperfil__opcion--header usrperfil__opcion--noborde">
+                                        <svg class="usrperfil__icono" focusable="false"
+                                            preserveAspectRatio="xMidYMid meet" fill="currentColor" width="32"
+                                            height="32" viewBox="0 0 32 32" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M14 26L15.41 24.59 7.83 17 28 17 28 15 7.83 15 15.41 7.41 14 6 4 16 14 26z">
+                                            </path>
+                                        </svg>
+                                        <div class="usrperfil__opcionCol">
+                                            Persona moral
+                                        </div>
+                                    </a>
+                                </li>
+
+
+                                <li class="usrperfil__li">
+                                    <div class="form__grupo usrperfil__buscar">
+                                        <label for="mi_busca-inset" class="oculto">Buscar persona moral</label>
+                                        <div class="form__inset">
+                                            <svg class="usrperfil__buscarIcon" focusable="false"
+                                                preserveAspectRatio="xMidYMid meet" fill="currentColor"
+                                                viewBox="0 0 32 32" aria-hidden="true"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M29,27.5859l-7.5521-7.5521a11.0177,11.0177,0,1,0-1.4141,1.4141L27.5859,29ZM4,13a9,9,0,1,1,9,9A9.01,9.01,0,0,1,4,13Z">
+                                                </path>
+                                            </svg>
+                                            <input type="search" name="" id="mi_busca-inset"
+                                                placeholder="Busca la persona moral" class="">
+
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="usrperfil__li">
+                                    <a href="#" class="usrperfil__opcion usrperfil__opcion--between">
+                                        <div class="usrperfil__opcionCol">
+                                            Persona moral
+                                            <span class="usrperfil__opcionSm">Patitos Feos SA. de CV</span>
+                                        </div>
+                                        <svg class="usrperfil__icono" focusable="false"
+                                            preserveAspectRatio="xMidYMid meet" fill="currentColor" viewBox="0 0 32 32"
+                                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M6 21V20H4v1a7 7 0 007 7h3V26H11A5 5 0 016 21zM24 11v1h2V11a7 7 0 00-7-7H16V6h3A5 5 0 0124 11zM11 11H5a3 3 0 00-3 3v2H4V14a1 1 0 011-1h6a1 1 0 011 1v2h2V14A3 3 0 0011 11zM8 10A4 4 0 104 6 4 4 0 008 10zM8 4A2 2 0 116 6 2 2 0 018 4zM27 25H21a3 3 0 00-3 3v2h2V28a1 1 0 011-1h6a1 1 0 011 1v2h2V28A3 3 0 0027 25zM20 20a4 4 0 104-4A4 4 0 0020 20zm6 0a2 2 0 11-2-2A2 2 0 0126 20z">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                </li>
+
+                                <li class="usrperfil__li">
+                                    <a href="#" class="usrperfil__opcion usrperfil__opcion--between">
+                                        <div class="usrperfil__opcionCol">
+                                            Persona moral
+                                            <span class="usrperfil__opcionSm">Patitos Feos SA. de CV</span>
+                                        </div>
+                                        <svg class="usrperfil__icono" focusable="false"
+                                            preserveAspectRatio="xMidYMid meet" fill="currentColor" viewBox="0 0 32 32"
+                                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M6 21V20H4v1a7 7 0 007 7h3V26H11A5 5 0 016 21zM24 11v1h2V11a7 7 0 00-7-7H16V6h3A5 5 0 0124 11zM11 11H5a3 3 0 00-3 3v2H4V14a1 1 0 011-1h6a1 1 0 011 1v2h2V14A3 3 0 0011 11zM8 10A4 4 0 104 6 4 4 0 008 10zM8 4A2 2 0 116 6 2 2 0 018 4zM27 25H21a3 3 0 00-3 3v2h2V28a1 1 0 011-1h6a1 1 0 011 1v2h2V28A3 3 0 0027 25zM20 20a4 4 0 104-4A4 4 0 0020 20zm6 0a2 2 0 11-2-2A2 2 0 0126 20z">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </details>
+                </div>
+            </section>
+        </header>
+
+        <!-- ASIDE -->
+        <!-- menuMain -->
+        <nav class="menuMain" aria-label="Navegación principal" id="menuMain">
+            <button type="button" aria-controls="menuMain" aria-expanded="true" aria-haspopup="menu"
+                class="menuMain__gatillo" id="menuMain__gatillo">
+                <span class="oculto">Mostrar menú</span>
+                <svg class="menuMain__gatilloIco" focusable="false" aria-hidden="true"
+                    preserveAspectRatio="xMidYMid meet" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 16L20 6 21.4 7.4 12.8 16 21.4 24.6 20 26z"></path>
+                </svg>
+            </button>
+            <div class="menuMain__header">
+                <div class="menuMain__headerCont">Gestor de víctimas y stock</div>
+            </div>
+            <ul class="menuMain__lista">
+                <li class="menuMain__item">
+                    <a href="#" class="menuMain__link menuMain__linkSm" aria-current="page">
+                        <img src="././assets/icons-base/chart--bar--flip.svg" alt="" aria-hidden="true"
+                            class="menuMain__icono">
+                        <span class="menuMain__txt">Resumen general</span>
+                    </a>
+                </li>
+                <li class="menuMain__item">
+                    <a href="#" class="menuMain__link menuMain__linkSm">
+                        <img src="././assets/icons-base/catalog.svg" alt="" aria-hidden="true"
+                            class="menuMain__icono">
+                        <span class="menuMain__txt">Gestor de inventario</span>
+                    </a>
+                </li>
+                <li class="menuMain__item">
+                    <a href="#" class="menuMain__link menuMain__linkSm">
+                        <img src="././assets/icons-base/identificaction.svg" alt="" aria-hidden="true"
+                            class="menuMain__icono">
+                        <span class="menuMain__txt">Censo de víctimas</span>
+                    </a>
+                </li>
+                <li class="menuMain__item">
+                    <a href="#" class="menuMain__link menuMain__linkSm">
+                        <img src="././assets/icons-base/user--avatar.svg" alt="" aria-hidden="true"
+                            class="menuMain__icono">
+                        <span class="menuMain__txt">Gestión de usuarios</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- MAIN -->
+        <main id="mainContent" class="rowgap--32">
+
+            <!--Titulo-->
+            <section class="fila--mix-8-4 fila--alignEnd">
+                <div>
+                    <h1 class="h2b mb--8">Resumen general de siniestros</h1>
+                    <p class="sh1m mb--0">Visualiza el estado actual de los siniestros y su impacto.</p>
+                </div>
+                <div class="--end">
+                    <span class="b1it color--neutro600">Ultima actualización: dd/mm/aa hh:hh</span>
+                </div>
+            </section>
+
+            <!--Totales-->
+            <section class="fichaTotales__section">                
+                
+                <!--Unidades de salud: Eliminar cuando no se necesiten-->
+                <div class="cajaVictimas--200 fichaTotales__unidades">
+
+                    <h2>
+                        <span class="sdsb fichaTotales__tit">Unidades de salud asignadas</span>
+                    </h2>
+
+                    <div class="fichaTotales__grupo">
+
+                        <div type="button" class="fichaTotales__btn">
+                            <span class="fichaTotales__btntxt">
+                                <span class="fichaTotales__tipo xsdr">Unidades de salud asignadas</span>
+                                <span class="fichaTotales__cant b1sb">1,390</span>
+                            </span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="cajaVictimas--200 fichaTotales__victimas">
+
+                    <h2>
+                        <span class="sdsb fichaTotales__tit">Víctimas totales</span>
+                        <span class="sh1b fichaTotales__total">5,554</span>
+                    </h2>
+
+                    <nav class="fichaTotales__grupo" aria-label="TIpos de víctimas">
+
+                        <!--LA OPCIÓN ACTIVA LLEVA aria-pressed="true"-->
+                        <button type="button" class="fichaTotales__btn" aria-pressed="true">
+                            <img src="./assets/icons/fichaTotal__fallecidas.svg" alt="" aria-hidden="true">
+                            <span class="fichaTotales__btntxt">
+                                <span class="fichaTotales__tipo xsdr">Fallecidas</span>
+                                <span class="fichaTotales__cant b1sb">1,390</span>
+                                <span class="fichaTotales__x100 xsdr">25%</span>
+                            </span>
+                        </button>
+
+                        <button type="button" class="fichaTotales__btn">
+                            <img src="./assets/icons/fichaTotal__lesionadas.svg" alt="" aria-hidden="true">
+                            <span class="fichaTotales__btntxt">
+                                <span class="fichaTotales__tipo xsdr">Lesionadas</span>
+                                <span class="fichaTotales__cant b1sb">1,290</span>
+                                <span class="fichaTotales__x100 xsdr">25%</span>
+                            </span>
+                        </button>
+
+                        <button type="button" class="fichaTotales__btn">
+                            <img src="./assets/icons/fichaTotal__damnificadas.svg" alt="" aria-hidden="true">
+                            <span class="fichaTotales__btntxt">
+                                <span class="fichaTotales__tipo xsdr">Damnificadas</span>
+                                <span class="fichaTotales__cant b1sb">1,290</span>
+                                <span class="fichaTotales__x100 xsdr">25%</span>
+                            </span>
+                        </button>
+
+                        <button type="button" class="fichaTotales__btn">
+                            <img src="./assets/icons/fichaTotal__desaparecidas.svg" alt="" aria-hidden="true">
+                            <span class="fichaTotales__btntxt">
+                                <span class="fichaTotales__tipo xsdr">Desaparecidas</span>
+                                <span class="fichaTotales__cant b1sb">1,290</span>
+                                <span class="fichaTotales__x100 xsdr">25%</span>
+                            </span>
+                        </button>
+
+                        <button type="button" class="fichaTotales__btn">
+                            <img src="./assets/icons/fichaTotal__noespecificado.svg" alt="" aria-hidden="true">
+                            <span class="fichaTotales__btntxt">
+                                <span class="fichaTotales__tipo xsdr">No especificado</span>
+                                <span class="fichaTotales__cant b1sb">1,290</span>
+                                <span class="fichaTotales__x100 xsdr">25%</span>
+                            </span>
+                        </button>
+
+                    </nav>
+
+                </div>
+
+            </section>
+
+            <!--Mapa-->
+            <section class="mapa__section">
+
+                <!--Filtros: Eliminar cuando no se necesiten-->
+                <div class="mapa__filtros rowgap--24">
+                    <div class="form__grupo">
+                        <label for="form01" class="form__label">Nombre del siniestro</label>
+                        <input type="text" class="form__control" placeholder="Busca por nombre o folio" id="form01">
+                    </div>
+
+                    <div class="form__grupo">
+                        <label class="form__label">Periodo del siniestro</label>
+                        
+                        <div class="form__periodo">
+                            <div class="form__rango1">
+                                <span class="oculto">Fecha inicial</span>
+                                <input type="date" id="fecha1" class="form__control">
+                            </div>
+                            -
+                            <div class="form__rango2">
+                                <span class="oculto">Fecha final</span>
+                                <input type="date" id="fecha2" class="form__control">
+                            </div>
+                        </div>
+                    </div>
+         
+                    <div class="form__grupo">
+                        <label for="form03" class="form__label">Tipo de siniestro</label>
+                        <select name="" id="form03" class="form__select">
+                            <option value="">Categoría</option>
+                        </select>
+                    </div>
+
+                    <div class="form__grupo">
+                        <label for="form04" class="form__label">Entidad</label>
+                        <select name="" id="form04" class="form__select">
+                            <option value="">Selecciona un estado</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="boton__primario boton--100">Aplicar filtros</button>
+
+                    <button type="button" class="boton__fantasma boton--100">Limpiar filtros</button>
+
+                </div>
+
+                <div class="mapa__mapa">
+                    Aquí va el mapa
+                    <span class="siniestroTipo__circulo">
+                        <img src="./assets/icons/calor.svg" alt="Calor extremo"  class="siniestroTipo__icono">
+                    </span>
+
+                    <span class="siniestroTipo__circulo">
+                        <img src="./assets/icons/huracan.svg" alt="Huracán"  class="siniestroTipo__icono">
+                    </span>
+
+                    <span class="siniestroTipo__circulo">
+                        <img src="./assets/icons/inundacion.svg" alt="Inundación"  class="siniestroTipo__icono">
+                    </span>
+
+                    <span class="siniestroTipo__circulo">
+                        <img src="./assets/icons/incendio.svg" alt="Incendio"  class="siniestroTipo__icono">
+                    </span>
+
+                    <span class="siniestroTipo__circulo">
+                        <img src="./assets/icons/incendio-forestal.svg" alt="Incendio forestal"  class="siniestroTipo__icono">
+                    </span>
+
+                    <span class="siniestroTipo__circulo">
+                        <img src="./assets/icons/sequia.svg" alt="Sequía"  class="siniestroTipo__icono">
+                    </span>
+
+                    <span class="siniestroTipo__circulo">
+                        <img src="./assets/icons/terremoto.svg" alt="Terremoto"  class="siniestroTipo__icono">
+                    </span>
+
+                    <span class="siniestroTipo__circulo">
+                        <img src="./assets/icons/tormenta-hielo.svg" alt="Tormentas de hielo y nieve"  class="siniestroTipo__icono">
+                    </span>
+
+                    <span class="siniestroTipo__circulo">
+                        <img src="./assets/icons/tornado.svg" alt="Tornado"  class="siniestroTipo__icono">
+                    </span>
+
+                    <span class="siniestroTipo__circulo">
+                        <img src="./assets/icons/tsunami.svg" alt="Tsunami"  class="siniestroTipo__icono">
+                    </span>
+
+                    <span class="siniestroTipo__circulo">
+                        <img src="./assets/icons/erupcion.svg" alt="Erupción volcánica"  class="siniestroTipo__icono">
+                    </span>
+                    
+                </div>
+
+            </section>
+
+            <!--TABLA 01-->
+            <section>
+                <h2 class="h2b">Estadísitica (tabla 1)</h2>
+                <p class="sh1m">Consulta el detalle de los siniestros por folio y el total de víctimas asociadas.</p>
+
+                <div class="tabla__section">
+                    <div class="tablaResponsiva--horizontal tabla--verde">
+                        <table class="tabla01">
+                            <caption class="oculto">
+                                Tablero de siniestros
+                            </caption>
+                            <thead class="tabla01__thead">
+                                <tr class="tabla01__theadTr">
+                                    <th scope="col" class="tabla01__theadTh">
+                                        <div>
+                                            <span>Folio</span>
+                                            <button type="button" class="tabla__ordenar">
+                                                <span class="oculto">
+                                                    Ordenar por Folio
+                                                </span>
+                                                <img src="assets/icons-base/tabla-ordenar.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </th>
+                    
+                                    <th scope="col" class="tabla01__theadTh">
+                                        <div>
+                                            <span>Nombre</span>
+                                            <button type="button" class="tabla__ordenar">
+                                                <span class="oculto">
+                                                    Ordenar por Nombre
+                                                </span>
+                                                <img src="assets/icons-base/tabla-ordenar.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </th>
+                                    
+                                    <th scope="col" class="tabla01__theadTh">
+                                        <div>
+                                            <span>Tipo</span>
+                                            <button type="button" class="tabla__ordenar">
+                                                <span class="oculto">
+                                                    Ordenar por Tipo
+                                                </span>
+                                                <img src="assets/icons-base/tabla-ordenar.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </th>
+                    
+                                    <th scope="col" class="tabla01__theadTh">
+                                        <div>
+                                            <span>Fecha</span>
+                                            <button type="button" class="tabla__ordenar">
+                                                <span class="oculto">
+                                                    Ordenar por Fecha
+                                                </span>
+                                                <img src="assets/icons-base/tabla-ordenar.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </th>
+                    
+                                    <th scope="col" class="tabla01__theadTh">
+                                        <div>
+                                            <span>Ubicación</span>
+                                            <button type="button" class="tabla__ordenar">
+                                                <span class="oculto">
+                                                    Ordenar por Ubicación
+                                                </span>
+                                                <img src="assets/icons-base/tabla-ordenar.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </th>
+                    
+                                    <th scope="col" class="tabla01__theadTh">
+                                        <div>
+                                            <span>Entidades afectadas</span>
+                                            <button type="button" class="tabla__ordenar">
+                                                <span class="oculto">
+                                                    Ordenar por Entidades afectadas
+                                                </span>
+                                                <img src="assets/icons-base/tabla-ordenar.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </th>
+                    
+                                    <th scope="col" class="tabla01__theadTh">
+                                        <div>
+                                            <span>Víctimas totales</span>
+                                            <button type="button" class="tabla__ordenar">
+                                                <span class="oculto">
+                                                    Ordenar por Víctimas totales
+                                                </span>
+                                                <img src="assets/icons-base/tabla-ordenar.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </th>
+                    
+                                    <th scope="col" class="tabla01__theadTh">
+                                        <div>
+                                            <span>Detalle</span>
+                                            <button type="button" class="tabla__ordenar">
+                                                <span class="oculto">
+                                                    Ordenar por Detalle
+                                                </span>
+                                                <img src="assets/icons-base/tabla-ordenar.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </th>
+                                    
+                    
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="tabla01__tbodyTr">
+                                    <td class="tabla01__tbodyTd --center">
+                                        PME380607P35
+                                    </td>
+                    
+                                    <td class="tabla01__tbodyTd --center">
+                                        Edificio de Hacienda
+                                    </td>
+                    
+                                    <td class="tabla01__tbodyTd --center">
+                                        Erupción volcánica
+                                    </td>
+                    
+                                    <td class="tabla01__tbodyTd --center">
+                                        30/05/2023
+                                    </td>
+                    
+                                    <td class="tabla01__tbodyTd --center">
+                                        22.1537, -100.9839
+                                    </td>
+                    
+                                    <td class="tabla01__tbodyTd --center">
+                                        Hidalgo, Aguascalientes, Veracruz
+                                    </td>
+                    
+                                    <td class="tabla01__tbodyTd --center">
+                                        
+                                    </td>
+                    
+                                    <td class="tabla01__tbodyTd --center">
+                                        3,500
+                                    </td>
+                    
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                    </div>
+                </div>
+                <p class="sdr mb--0">Mostrando registros 1 a 10, de 751</p>
+
+
+                <!--Paginador-->
+                <div class="paginacion paginacion--verde mt--20">
+                    <div class="group-pagination">
+                        <nav class="pagination">
+                            <a href="#/" aria-label="Ir a la página de búsqueda anterior"
+                                class="pagination__previous icon-link">
+                                <img src="./assets/icons-base/chevron--left.svg" alt="">
+                                Anterior
+                            </a>
+                            <ol class="pagination__items">
+                                <li><a href="#/" aria-label="Página 1" class="pagination__item">1</a></li>
+                                <li><a href="#/" aria-label="Página 2" class="pagination__item">2</a></li>
+                                <li><a href="#/" aria-label="Página 3" class="pagination__item">3</a></li>
+                                <li><a href="#/" aria-label="Página 4" class="pagination__item"
+                                        aria-current="page">4</a>
+                                </li>
+                                <li><a href="#/" aria-label="Página 5" class="pagination__item">5</a></li>
+                            </ol>
+                            <a href="#/" aria-label="Ir a la página de búsqueda siguiente"
+                                class="pagination__next icon-link">Siguiente
+                                <img src="./assets/icons-base/chevron--right.svg" alt="">
+                            </a>
+                        </nav>
+                    </div>
+                </div>
+
+                <div class="--center mt--16">
+                    <button type="button" class="boton__secundario mx--auto boton--verde">Exportar datos <img src="./assets/icons-base/ico-descargar.svg" alt=""></button>
+                </div>
+            </section>
+
+            <!--TABLA 02-->
+            <section>
+                <h2 class="h2b">Estadísitica (tabla 2)</h2>
+                <p class="sh1m">Consulta el detalle individual o descarga la base de datos.</p>
+
+                <div class="search my--32">
+                    <div class="search--field search--field--100">
+                        <label class="oculto" for="filtross">Filtrar por nombre o folio de la persona.</label>
+                        <div class="form-item-wrapper">
+   
+                            <img src="./assets/icons-base/search.svg" alt="" aria-hidden="true">
+
+                            <input type="text" class="form-item buscar" placeholder="Filtra por nombre o folio de la persona."
+                                id="filtross">
+                            <button type="button" class="clear-button">
+                                <span class="oculto">Borrar</span>
+                                <img src="./assets/icons-base/misuse--outline.svg" alt="" aria-hidden="true">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="tabla__section">
+                    <div class="tablaResponsiva--horizontal tabla--verde">
+                        <table class="tabla01">
+                            <caption class="oculto">
+                                Tablero de siniestros
+                            </caption>
+                            <thead class="tabla01__thead">
+                                <tr class="tabla01__theadTr">
+                                    <th scope="col" class="tabla01__theadTh">
+                                        <div>
+                                            <span>Folio</span>
+                                            <button type="button" class="tabla__ordenar">
+                                                <span class="oculto">
+                                                    Ordenar por Folio
+                                                </span>
+                                                <img src="assets/icons-base/tabla-ordenar.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </th>
+                    
+                                    <th scope="col" class="tabla01__theadTh">
+                                        <div>
+                                            <span>Nombre</span>
+                                            <button type="button" class="tabla__ordenar">
+                                                <span class="oculto">
+                                                    Ordenar por Nombre
+                                                </span>
+                                                <img src="assets/icons-base/tabla-ordenar.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </th>
+                                    
+                                    <th scope="col" class="tabla01__theadTh">
+                                        <div>
+                                            <span>Sexo</span>
+                                            <button type="button" class="tabla__ordenar">
+                                                <span class="oculto">
+                                                    Ordenar por Sexo
+                                                </span>
+                                                <img src="assets/icons-base/tabla-ordenar.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </th>
+                    
+                                    <th scope="col" class="tabla01__theadTh">
+                                        <div>
+                                            <span>Edad</span>
+                                            <button type="button" class="tabla__ordenar">
+                                                <span class="oculto">
+                                                    Ordenar por Edad
+                                                </span>
+                                                <img src="assets/icons-base/tabla-ordenar.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </th>
+                    
+                                    <th scope="col" class="tabla01__theadTh">
+                                        <div>
+                                            <span>Estatus de la víctima</span>
+                                            <button type="button" class="tabla__ordenar">
+                                                <span class="oculto">
+                                                    Ordenar por Estatus de la víctima
+                                                </span>
+                                                <img src="assets/icons-base/tabla-ordenar.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </th>
+                    
+                                    <th scope="col" class="tabla01__theadTh">
+                                        <div>
+                                            <span>Situación de la víctima</span>
+                                            <button type="button" class="tabla__ordenar">
+                                                <span class="oculto">
+                                                    Ordenar por Situación de la víctima
+                                                </span>
+                                                <img src="assets/icons-base/tabla-ordenar.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </th>
+                    
+                                    <th scope="col" class="tabla01__theadTh">
+                                        <div>
+                                            <span>Contacto</span>
+                                            <button type="button" class="tabla__ordenar">
+                                                <span class="oculto">
+                                                    Ordenar por Contacto
+                                                </span>
+                                                <img src="assets/icons-base/tabla-ordenar.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </th>
+                    
+                                    <th scope="col" class="tabla01__theadTh">
+                                        <div>
+                                            <span>Número de contacto</span>
+                                            <button type="button" class="tabla__ordenar">
+                                                <span class="oculto">
+                                                    Ordenar por Número de contacto
+                                                </span>
+                                                <img src="assets/icons-base/tabla-ordenar.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </th>
+                                    
+                    
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="tabla01__tbodyTr">
+                                    <td class="tabla01__tbodyTd --center">
+                                        PME380607P35
+                                    </td>
+                    
+                                    <td class="tabla01__tbodyTd --center">
+                                        Verónica S. Castro
+                                    </td>
+                    
+                                    <td class="tabla01__tbodyTd --center">
+                                        F
+                                    </td>
+                    
+                                    <td class="tabla01__tbodyTd --center">
+                                        32
+                                    </td>
+                    
+                                    <td class="tabla01__tbodyTd --center">
+                                        <span class="pildora pildora--error borde--no">
+                                            <span class="pildora--dot"></span>
+                                            Fallecida
+                                        </span>
+                                    </td>
+                    
+                                    <td class="tabla01__tbodyTd --center">
+                                        Atendida en sitio
+                                    </td>
+                    
+                                    <td class="tabla01__tbodyTd --center">
+                                        Juan Pérez
+                                    </td>
+                    
+                                    <td class="tabla01__tbodyTd --center">
+                                        555-0456
+                                    </td>
+                    
+                                </tr>
+                                <tr class="tabla01__tbodyTr">
+                                    <td class="tabla01__tbodyTd --center">
+                                        PME380607P35
+                                    </td>
+                    
+                                    <td class="tabla01__tbodyTd --center">
+                                        Verónica S. Castro
+                                    </td>
+                    
+                                    <td class="tabla01__tbodyTd --center">
+                                        F
+                                    </td>
+                    
+                                    <td class="tabla01__tbodyTd --center">
+                                        32
+                                    </td>
+                    
+                                    <td class="tabla01__tbodyTd --center">
+                                        <span class="pildora pildora--naranja borde--no">
+                                            <span class="pildora--dot"></span>
+                                            Lesionada
+                                        </span>
+                                    </td>
+                    
+                                    <td class="tabla01__tbodyTd --center">
+                                        Atendida en sitio
+                                    </td>
+                    
+                                    <td class="tabla01__tbodyTd --center">
+                                        Juan Pérez
+                                    </td>
+                    
+                                    <td class="tabla01__tbodyTd --center">
+                                        555-0456
+                                    </td>
+                    
+                                </tr>
+                                <tr class="tabla01__tbodyTr">
+                                    <td class="tabla01__tbodyTd --center">
+                                        PME380607P35
+                                    </td>
+                    
+                                    <td class="tabla01__tbodyTd --center">
+                                        Verónica S. Castro
+                                    </td>
+                    
+                                    <td class="tabla01__tbodyTd --center">
+                                        F
+                                    </td>
+                    
+                                    <td class="tabla01__tbodyTd --center">
+                                        32
+                                    </td>
+                    
+                                    <td class="tabla01__tbodyTd --center">
+                                        <span class="pildora pildora--alerta borde--no">
+                                            <span class="pildora--dot"></span>
+                                            Damnificada
+                                        </span>
+                                    </td>
+                    
+                                    <td class="tabla01__tbodyTd --center">
+                                        Atendida en sitio
+                                    </td>
+                    
+                                    <td class="tabla01__tbodyTd --center">
+                                        Juan Pérez
+                                    </td>
+                    
+                                    <td class="tabla01__tbodyTd --center">
+                                        555-0456
+                                    </td>
+                    
+                                </tr>
+                                <tr class="tabla01__tbodyTr">
+                                    <td class="tabla01__tbodyTd --center">
+                                        PME380607P35
+                                    </td>
+                    
+                                    <td class="tabla01__tbodyTd --center">
+                                        Verónica S. Castro
+                                    </td>
+                    
+                                    <td class="tabla01__tbodyTd --center">
+                                        F
+                                    </td>
+                    
+                                    <td class="tabla01__tbodyTd --center">
+                                        32
+                                    </td>
+                    
+                                    <td class="tabla01__tbodyTd --center">
+                                        <span class="pildora pildora--dorado borde--no">
+                                            <span class="pildora--dot"></span>
+                                            Desaparecida
+                                        </span>
+                                    </td>
+                    
+                                    <td class="tabla01__tbodyTd --center">
+                                        Atendida en sitio
+                                    </td>
+                    
+                                    <td class="tabla01__tbodyTd --center">
+                                        Juan Pérez
+                                    </td>
+                    
+                                    <td class="tabla01__tbodyTd --center">
+                                        555-0456
+                                    </td>
+                    
+                                </tr>
+                                <tr class="tabla01__tbodyTr">
+                                    <td class="tabla01__tbodyTd --center">
+                                        PME380607P35
+                                    </td>
+                    
+                                    <td class="tabla01__tbodyTd --center">
+                                        Verónica S. Castro
+                                    </td>
+                    
+                                    <td class="tabla01__tbodyTd --center">
+                                        F
+                                    </td>
+                    
+                                    <td class="tabla01__tbodyTd --center">
+                                        32
+                                    </td>
+                    
+                                    <td class="tabla01__tbodyTd --center">
+                                        <span class="pildora pildora--neutro borde--no">
+                                            <span class="pildora--dot"></span>
+                                            No especificado
+                                        </span>
+                                    </td>
+                    
+                                    <td class="tabla01__tbodyTd --center">
+                                        Atendida en sitio
+                                    </td>
+                    
+                                    <td class="tabla01__tbodyTd --center">
+                                        Juan Pérez
+                                    </td>
+                    
+                                    <td class="tabla01__tbodyTd --center">
+                                        555-0456
+                                    </td>
+                    
+                                </tr>
+                                <tr class="tabla01__tbodyTr">
+                                    <td class="tabla01__tbodyTd --center">
+                                        PME380607P35
+                                    </td>
+                    
+                                    <td class="tabla01__tbodyTd --center">
+                                        Verónica S. Castro
+                                    </td>
+                    
+                                    <td class="tabla01__tbodyTd --center">
+                                        F
+                                    </td>
+                    
+                                    <td class="tabla01__tbodyTd --center">
+                                        32
+                                    </td>
+                    
+                                    <td class="tabla01__tbodyTd --center">
+                                        <span class="pildora pildora--exito borde--no">
+                                            <span class="pildora--dot"></span>
+                                            Encontrada
+                                        </span>
+                                    </td>
+                    
+                                    <td class="tabla01__tbodyTd --center">
+                                        Atendida en sitio
+                                    </td>
+                    
+                                    <td class="tabla01__tbodyTd --center">
+                                        Juan Pérez
+                                    </td>
+                    
+                                    <td class="tabla01__tbodyTd --center">
+                                        555-0456
+                                    </td>
+                    
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                    </div>
+                </div>
+                <p class="sdr mb--0">Mostrando registros 1 a 10, de 751</p>
+
+
+                <!--Paginador-->
+                <div class="paginacion paginacion--verde mt--20">
+                    <div class="group-pagination">
+                        <nav class="pagination">
+                            <a href="#/" aria-label="Ir a la página de búsqueda anterior"
+                                class="pagination__previous icon-link">
+                                <img src="./assets/icons-base/chevron--left.svg" alt="">
+                                Anterior
+                            </a>
+                            <ol class="pagination__items">
+                                <li><a href="#/" aria-label="Página 1" class="pagination__item">1</a></li>
+                                <li><a href="#/" aria-label="Página 2" class="pagination__item">2</a></li>
+                                <li><a href="#/" aria-label="Página 3" class="pagination__item">3</a></li>
+                                <li><a href="#/" aria-label="Página 4" class="pagination__item"
+                                        aria-current="page">4</a>
+                                </li>
+                                <li><a href="#/" aria-label="Página 5" class="pagination__item">5</a></li>
+                            </ol>
+                            <a href="#/" aria-label="Ir a la página de búsqueda siguiente"
+                                class="pagination__next icon-link">Siguiente
+                                <img src="./assets/icons-base/chevron--right.svg" alt="">
+                            </a>
+                        </nav>
+                    </div>
+                </div>
+
+                <div class="--center mt--16">
+                    <button type="button" class="boton__secundario mx--auto boton--verde">Exportar datos <img src="./assets/icons-base/ico-descargar.svg" alt=""></button>
+                </div>
+            </section>
+
+            <!--TABLA 03-->
+            <section>
+                <h2 class="h2b">Estadísitica (tabla 3)</h2>
+                <p class="sh1m">Consulta el detalle individual o descarga la base de datos.</p>
+
+                <div class="search my--32">
+                    <div class="search--field search--field--100">
+                        <label class="oculto" for="filtross">Filtrar por nombre o folio de la persona.</label>
+                        <div class="form-item-wrapper">
+   
+                            <img src="./assets/icons-base/search.svg" alt="" aria-hidden="true">
+
+                            <input type="text" class="form-item buscar" placeholder="Filtra por nombre o folio de la persona."
+                                id="filtross">
+                            <button type="button" class="clear-button">
+                                <span class="oculto">Borrar</span>
+                                <img src="./assets/icons-base/misuse--outline.svg" alt="" aria-hidden="true">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="tabla__section">
+                    <div class="tablaResponsiva--horizontal tabla--verde">
+                        <table class="tabla01">
+                            <caption class="oculto">
+                                Tablero de siniestros
+                            </caption>
+                            <thead class="tabla01__thead">
+                                <tr class="tabla01__theadTr">
+                                    <th scope="col" class="tabla01__theadTh">
+                                        <div>
+                                            <span>Folio</span>
+                                            <button type="button" class="tabla__ordenar">
+                                                <span class="oculto">
+                                                    Ordenar por Folio
+                                                </span>
+                                                <img src="assets/icons-base/tabla-ordenar.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </th>
+                    
+                                    <th scope="col" class="tabla01__theadTh">
+                                        <div>
+                                            <span>Nombre</span>
+                                            <button type="button" class="tabla__ordenar">
+                                                <span class="oculto">
+                                                    Ordenar por Nombre
+                                                </span>
+                                                <img src="assets/icons-base/tabla-ordenar.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </th>
+                                    
+                                    <th scope="col" class="tabla01__theadTh">
+                                        <div>
+                                            <span>Sexo</span>
+                                            <button type="button" class="tabla__ordenar">
+                                                <span class="oculto">
+                                                    Ordenar por Sexo
+                                                </span>
+                                                <img src="assets/icons-base/tabla-ordenar.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </th>
+                    
+                                    <th scope="col" class="tabla01__theadTh">
+                                        <div>
+                                            <span>Edad</span>
+                                            <button type="button" class="tabla__ordenar">
+                                                <span class="oculto">
+                                                    Ordenar por Edad
+                                                </span>
+                                                <img src="assets/icons-base/tabla-ordenar.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </th>
+                    
+                                    <th scope="col" class="tabla01__theadTh">
+                                        <div>
+                                            <span>Estatus de la víctima</span>
+                                            <button type="button" class="tabla__ordenar">
+                                                <span class="oculto">
+                                                    Ordenar por Estatus de la víctima
+                                                </span>
+                                                <img src="assets/icons-base/tabla-ordenar.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </th>
+                    
+                                    <th scope="col" class="tabla01__theadTh">
+                                        <div>
+                                            <span>Contacto</span>
+                                            <button type="button" class="tabla__ordenar">
+                                                <span class="oculto">
+                                                    Ordenar por Contacto
+                                                </span>
+                                                <img src="assets/icons-base/tabla-ordenar.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </th>
+                    
+                                    <th scope="col" class="tabla01__theadTh">
+                                        <div>
+                                            <span>Número de contacto</span>
+                                            <button type="button" class="tabla__ordenar">
+                                                <span class="oculto">
+                                                    Ordenar por Número de contacto
+                                                </span>
+                                                <img src="assets/icons-base/tabla-ordenar.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </th>
+
+                                    <th scope="col" class="tabla01__theadTh">
+                                        <div>
+                                            <span>Fuente</span>
+                                            <button type="button" class="tabla__ordenar">
+                                                <span class="oculto">
+                                                    Ordenar por Fuente
+                                                </span>
+                                                <img src="assets/icons-base/tabla-ordenar.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </th>
+                                    
+                    
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="tabla01__tbodyTr">
+                                    <td class="tabla01__tbodyTd --center">
+                                        PME380607P35
+                                    </td>
+                    
+                                    <td class="tabla01__tbodyTd --center">
+                                        Verónica S. Castro
+                                    </td>
+                    
+                                    <td class="tabla01__tbodyTd --center">
+                                        F
+                                    </td>
+                    
+                                    <td class="tabla01__tbodyTd --center">
+                                        32
+                                    </td>
+                    
+                                    <td class="tabla01__tbodyTd --center">
+                                        <span class="pildora pildora--error borde--no">
+                                            <span class="pildora--dot"></span>
+                                            Fallecida
+                                        </span>
+                                    </td>
+                    
+                                    <td class="tabla01__tbodyTd --center">
+                                        Juan Pérez
+                                    </td>
+                    
+                                    <td class="tabla01__tbodyTd --center">
+                                        555-0456
+                                    </td>
+
+                                    <td class="tabla01__tbodyTd --center">
+                                        <span class="pildora pildora--info">
+                                            <span class="pildora--dot"></span>
+                                            Sistema
+                                        </span>
+                                    </td>
+                    
+                                </tr>
+                                <tr class="tabla01__tbodyTr">
+                                    <td class="tabla01__tbodyTd --center">
+                                        PME380607P35
+                                    </td>
+                    
+                                    <td class="tabla01__tbodyTd --center">
+                                        Verónica S. Castro
+                                    </td>
+                    
+                                    <td class="tabla01__tbodyTd --center">
+                                        F
+                                    </td>
+                    
+                                    <td class="tabla01__tbodyTd --center">
+                                        32
+                                    </td>
+                    
+                                    <td class="tabla01__tbodyTd --center">
+                                        <span class="pildora pildora--error borde--no">
+                                            <span class="pildora--dot"></span>
+                                            Fallecida
+                                        </span>
+                                    </td>
+                    
+                                    <td class="tabla01__tbodyTd --center">
+                                        Juan Pérez
+                                    </td>
+                    
+                                    <td class="tabla01__tbodyTd --center">
+                                        555-0456
+                                    </td>
+
+                                    <td class="tabla01__tbodyTd --center">
+                                        <span class="pildora pildora--morado">
+                                            <span class="pildora--dot"></span>
+                                            Chatbot
+                                        </span>
+                                    </td>
+                    
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                    </div>
+                </div>
+                <p class="sdr mb--0">Mostrando registros 1 a 10, de 751</p>
+
+
+                <!--Paginador-->
+                <div class="paginacion paginacion--verde mt--20">
+                    <div class="group-pagination">
+                        <nav class="pagination">
+                            <a href="#/" aria-label="Ir a la página de búsqueda anterior"
+                                class="pagination__previous icon-link">
+                                <img src="./assets/icons-base/chevron--left.svg" alt="">
+                                Anterior
+                            </a>
+                            <ol class="pagination__items">
+                                <li><a href="#/" aria-label="Página 1" class="pagination__item">1</a></li>
+                                <li><a href="#/" aria-label="Página 2" class="pagination__item">2</a></li>
+                                <li><a href="#/" aria-label="Página 3" class="pagination__item">3</a></li>
+                                <li><a href="#/" aria-label="Página 4" class="pagination__item"
+                                        aria-current="page">4</a>
+                                </li>
+                                <li><a href="#/" aria-label="Página 5" class="pagination__item">5</a></li>
+                            </ol>
+                            <a href="#/" aria-label="Ir a la página de búsqueda siguiente"
+                                class="pagination__next icon-link">Siguiente
+                                <img src="./assets/icons-base/chevron--right.svg" alt="">
+                            </a>
+                        </nav>
+                    </div>
+                </div>
+
+                <div class="--center mt--16">
+                    <button type="button" class="boton__secundario mx--auto boton--verde">Exportar datos <img src="./assets/icons-base/ico-descargar.svg" alt=""></button>
+                </div>
+            </section>
+
+        </main>
+
+<!-- FOOTER -->
+      <footer class="footer">
+        <div class="footer__contenedor">
+          <!-- ESCUDO DEL GOBIERNO DE MEXICO -->
+          <div class="footer__mexico">
+            <img
+              src="https://framework-gb.cdn.gob.mx/gobmx/img/logo_blanco.svg"
+              alt="Gobierno de México"
+              class="footer__escudo"
+            />
+          </div>
+
+          <div class="footer__colCentral">
+            <!-- QUE ES GOB MX -->
+            <div class="footer__gobmx">
+              <details class="mexico__details" open>
+                <summary class="footer__summary footer__summary--gobmx">
+                  <span class="footer__tit">¿Qué es gob.mx?</span>
+                </summary>
+                <p class="mexico__detailsp">
+                  Es el portal único de trámites, información y participación
+                  ciudadana.
+                  <a
+                    href="https://www.gob.mx/que-es-gobmx"
+                    target="_blank"
+                    rel="noopener"
+                    title="El enlace abre en ventana nueva"
+                  >
+                    <b>Leer más</b>
+                  </a>
+                </p>
+              </details>
+            </div>
+
+            <!-- ENLACES -->
+            <div class="footer__enlaces">
+              <details class="mexico__details" open>
+                <summary class="footer__summary footer__summary--enlaces">
+                  <span class="footer__tit">Enlaces</span>
+                </summary>
+                <div class="footer__enlacesList">
+                  <div class="footer__enlacesCol1">
+                    <a
+                      class="footer__enlacesLink"
+                      href="https://datos.gob.mx/"
+                      target="_blank"
+                      rel="noopener"
+                      title="El enlace abre en ventana nueva"
+                    >
+                      Datos
+                    </a>
+
+                    <a
+                      class="footer__enlacesLink"
+                      href="https://www.gob.mx/inafed/acciones-y-programas/portal-de-obligaciones-de-transparencia-pot"
+                      target="_blank"
+                      rel="noopener"
+                      title="El enlace abre en ventana nueva"
+                    >
+                      Portal de Obligaciones de Transparencia
+                    </a>
+
+                    <a
+                      class="footer__enlacesLink"
+                      href="https://www.plataformadetransparencia.org.mx/Inicio"
+                      target="_blank"
+                      rel="noopener"
+                      title="El enlace abre en ventana nueva"
+                    >
+                      Plataforma Nacional de Transparencia
+                    </a>
+
+                    <a
+                      class="footer__enlacesLink"
+                      href="https://alertadores.buengobierno.gob.mx/"
+                      target="_blank"
+                      rel="noopener"
+                      title="El enlace abre en ventana nueva"
+                    >
+                      Alerta
+                    </a>
+                  </div>
+
+                  <div class="footer__enlacesCol2">
+                    <a
+                      class="footer__enlacesLink"
+                      href="#"
+                      target="_blank"
+                      rel="noopener"
+                      title="El enlace abre en ventana nueva"
+                    >
+                      Administraciones anteriores
+                    </a>
+
+                    <a
+                      class="footer__enlacesLink"
+                      href="https://www.gob.mx/accesibilidad"
+                      target="_blank"
+                      rel="noopener"
+                      title="El enlace abre en ventana nueva"
+                    >
+                      Declaración de accesibilidad
+                    </a>
+
+                    <a
+                      class="footer__enlacesLink"
+                      href="http://www.ordenjuridico.gob.mx/"
+                      target="_blank"
+                      rel="noopener"
+                      title="El enlace abre en ventana nueva"
+                    >
+                      Marco jurídico
+                    </a>
+
+                    <a
+                      class="footer__enlacesLink"
+                      href="#"
+                      target="_blank"
+                      rel="noopener"
+                      title="El enlace abre en ventana nueva"
+                    >
+                      Política de seguridad
+                    </a>
+
+                    <a
+                      class="footer__enlacesLink"
+                      href="https://www.gob.mx/terminos"
+                      target="_blank"
+                      rel="noopener"
+                      title="El enlace abre en ventana nueva"
+                    >
+                      Términos y condiciones
+                    </a>
+
+                    <a
+                      class="footer__enlacesLink"
+                      href="#"
+                      target="_blank"
+                      rel="noopener"
+                      title="El enlace abre en ventana nueva"
+                    >
+                      Aviso de privacidad
+                    </a>
+
+                    <a
+                      class="footer__enlacesLink"
+                      href="#"
+                      target="_blank"
+                      rel="noopener"
+                      title="El enlace abre en ventana nueva"
+                    >
+                      Aviso de privacidad simplificado
+                    </a>
+
+                    <a
+                      class="footer__enlacesLink"
+                      href="#"
+                      target="_blank"
+                      rel="noopener"
+                      title="El enlace abre en ventana nueva"
+                    >
+                      Mapa de sitio
+                    </a>
+                  </div>
+                </div>
+              </details>
+            </div>
+          </div>
+
+          <!-- REDES -->
+          <div class="footer__redes">
+            <p class="footer__denuncia">
+              <a
+                href="https://sidec.buengobierno.gob.mx/#!/"
+                target="_blank"
+                rel="noopener"
+                title="El enlace abre en ventana nueva"
+              >
+                Denuncia contra servidores públicos
+              </a>
+            </p>
+
+            <div class="footer__siguenosCont">
+              <p class="footer__siguenosTit">Síguenos en</p>
+              <ul class="footer__redes__ul">
+                <li>
+                  <a
+                    target="_blank"
+                    rel="noopener"
+                    title="El enlace abre en ventana nueva"
+                    href="https://www.facebook.com/gobmexico"
+                    aria-label="Facebook de Presidencia"
+                  >
+                    <img alt="Facebook" src="assets/icons-base/facebook.svg" />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    target="_blank"
+                    rel="noopener"
+                    title="El enlace abre en ventana nueva"
+                    href="https://twitter.com/GobiernoMX"
+                    aria-label="Twitter de Presidencia"
+                  >
+                    <img alt="Twitter" src="assets/icons-base/twitter-x.svg" />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    target="_blank"
+                    rel="noopener"
+                    title="El enlace abre en ventana nueva"
+                    href="https://www.instagram.com/gobmexico/"
+                    aria-label="Instagram de Presidencia"
+                  >
+                    <img
+                      alt="instagram"
+                      src="assets/icons-base/instagram.svg"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    target="_blank"
+                    rel="noopener"
+                    title="El enlace abre en ventana nueva"
+                    href="https://www.youtube.com/@gobiernodemexico"
+                    aria-label="Youtube de Presidencia"
+                  >
+                    <img alt="youtube" src="assets/icons-base/youtube.svg" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer__079">
+              <div class="footer__079col1">
+                <img
+                  src="assets/icons-base/footer-flor.svg"
+                  alt=""
+                  class="footer__079img"
+                />
+                <span class="footer__079num">079</span>
+              </div>
+              <div class="footer__079info">
+                <span class="footer__079txt"
+                  >Comunícate, <br />
+                  estamos para ayudarte</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+
+
+    </div>
+    <script>
+        // Seleccionamos los elementos
+        const btnAbrir = document.getElementById('toggleFiltrosBtn');
+        const btnCerrar = document.querySelector('.close-filtros-btn');
+        const contenedorFiltros = document.querySelector('.filtros');
+
+        // Evento para ABRIR (Añade la clase)
+        btnAbrir.addEventListener('click', () => {
+            contenedorFiltros.classList.add('open');
+        });
+
+        // Evento para CERRAR (Quita la clase)
+        btnCerrar.addEventListener('click', () => {
+            contenedorFiltros.classList.remove('open');
+        });
+    </script>
+
+    <script src="./assets/js/header-footer-details.js"></script>
+    <script src="./assets/js/details-deskOpen.js"></script>
+    <script src="./assets/js/aside-show-hide.js"></script>
+    <script src="./assets/js/aside-movil-height.js"></script>
+    <script src="./assets/js/details-cierra-onclickout.js"></script>
+    <script src="./assets/js/tabla-responsiva-sombreado.js"></script>
+
+</body>
+
+</html>

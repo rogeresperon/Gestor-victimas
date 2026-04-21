@@ -1,0 +1,21 @@
+:root {
+    /*color primario*/
+    --gama100:var(--pguinda100);
+    --gama200:var(--pguinda200);
+    --gama300:var(--pguinda300);
+    --gama400:var(--pguinda400);
+    --gama500:var(--pguinda500);
+    --gama600:var(--pguinda600);
+    --gama700:var(--pguinda700);
+    --gama800:var(--pguinda800);
+    --gama900:var(--pguinda900);
+    --gama950:var(--pguinda950);
+    --gama1000:var(--pguinda1000);
+    --principal:var(--pguinda900);
+
+    /*filtro para imágenes de negro a color primario*/
+    --filtroPrimario:invert(11%) sepia(29%) saturate(5706%) hue-rotate(314deg) brightness(93%) contrast(97%);
+
+    /*degradado*/
+    --degradadoColores: var(--pguinda900), var(--pguinda600);
+}

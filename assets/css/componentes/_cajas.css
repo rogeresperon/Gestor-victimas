@@ -1,0 +1,54 @@
+/*CAJAS*/
+.caja__maxw { max-width:var(--MaxWidth); margin:0 auto; padding-left:16px; padding-right:16px;}
+
+/*CAJA BÁSICA*/
+[class*="cajaBasica--"] { border-radius:16px; background:#FFF; border:solid 1px var(--neutro400);}
+.cajaBasica--4 { padding:4px;}
+.cajaBasica--8 { padding:8px;}
+.cajaBasica--16 { padding:16px;}
+.cajaBasica--20 { padding:20px;}
+.cajaBasica--24 { padding:24px;}
+.cajaBasica--32 { padding:32px;}
+.cajaBasica--3248 { padding:32px 48px;}
+.caja__tit { font-size:1.5rem; font-weight:600;}
+.caja__desc { color:var(--neutro700);}
+
+.pag-blanca { background-color: #FFF;}
+
+@media (max-width:767.9px) {
+    [class*="cajaBasica--"] { padding:16px;}
+}
+
+
+/*CAJA NEUTRO*/
+[class*="cajaNeutro--"] { border-radius:16px; background:var(--neutro300); border:solid 1px var(--neutro300);}
+.cajaNeutro--4 { padding:4px;}
+.cajaNeutro--8 { padding:8px;}
+.cajaNeutro--16 { padding:16px;}
+.cajaNeutro--20 { padding:20px;}
+.cajaNeutro--24 { padding:24px;}
+.cajaNeutro--32 { padding:32px;}
+.cajaNeutro--40 { padding:40px;}
+.cajaNeutro--3248 { padding:32px 48px;}
+
+.min-height445 { min-height: 445px; }
+
+@media (max-width:767.9px) {
+    [class*="cajaNeutro--"] { padding:16px;}
+    .min-height445 { min-height: 130px; }
+}
+
+/*CAJA FONT */
+[class*="cajaFont--"] { border-radius:16px; background:#FFF; border:solid 2px var(--gama100);}
+.cajaFont--4 { padding:4px;}
+.cajaFont--8 { padding:8px;}
+.cajaFont--16 { padding:16px;}
+.cajaFont--20 { padding:20px;}
+.cajaFont--24 { padding:24px;}
+.cajaFont--32 { padding:32px;}
+.cajaFont--40 { padding:40px;}
+.cajaFont--3248 { padding:32px 48px;}
+
+@media (max-width:767.9px) {
+    [class*="cajaFont--"] { padding:16px;}
+}

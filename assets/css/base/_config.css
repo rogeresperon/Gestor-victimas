@@ -1,0 +1,135 @@
+/*FAMILIA*/
+html { font-size:16px;}
+body, body * {  font-family: "Noto Sans", sans-serif; }
+@font-face { font-family:'Patria'; src: url('../../fonts/Patria_Regular.otf') format('opentype');}
+.patria,
+[class*="__patria"] { font-family:"Patria", serif;}
+
+/*A LINK*/
+a, 
+a:focus,
+a img  { color:var(--principal); font-weight:600;}
+
+a:hover  { color:color-mix(in srgb, var(--principal) 80%, #FFF)}
+a:active { color:color-mix(in srgb, var(--principal) 70%, #FFF)}
+a:visited { color:color-mix(in srgb, var(--principal) 80%, #FFF)}
+
+/*HR*/
+hr { border:none; border-top:solid 1px var(--neutro400); width:100%;}
+.hr--highContrast { border-top:solid 1px var(--neutro600)}
+
+/*HEADINGS */
+
+/*H0*/
+.h0bl, .h0b, .h0sb, .h0m, .h0r { font-size:3.5rem; line-height:3.75rem; margin:0 0 16px 0; }
+.h0bl { font-weight:800;}
+.h0b  { font-weight:700;}
+.h0sb { font-weight:600;}
+.h0m  { font-weight:500;}
+.h0r  { font-weight:400;}
+
+/*H1*/
+.h1bl, .h1b, .h1sb, .h1m, .h1r { font-size:2.5rem; line-height:3.375rem; margin:0 0 16px 0; }
+.h1bl { font-weight:800;}
+.h1b  { font-weight:700;}
+.h1sb { font-weight:600;}
+.h1m  { font-weight:500;}
+.h1r  { font-weight:400;}
+
+/*H2*/
+.h2bl, .h2b, .h2sb, .h2m, .h2r { font-size:2rem; line-height:2.75rem; margin:0 0 16px 0; }
+.h2bl { font-weight:800;}
+.h2b  { font-weight:700;}
+.h2sb { font-weight:600;}
+.h2m  { font-weight:500;}
+.h2r  { font-weight:400;}
+
+/*Subtitulo SH0*/
+.sh0bl, .sh0b, .sh0sb, .sh0m, .sh0r { font-size:1.5rem; line-height:2.0625rem; margin:0 0 16px 0; }
+.sh0bl { font-weight:800;}
+.sh0b  { font-weight:700;}
+.sh0sb { font-weight:600;}
+.sh0m  { font-weight:500;}
+.sh0r  { font-weight:400;}
+
+/*Subtitulo SH1*/
+.sh1bl, .sh1b, .sh1sb, .sh1m, .sh1r { font-size:1.25rem; line-height:1.6875rem; margin:0 0 16px 0; }
+.sh1bl { font-weight:800;}
+.sh1b  { font-weight:700;}
+.sh1sb { font-weight:600;}
+.sh1m  { font-weight:500;}
+.sh1r  { font-weight:400;}
+
+/*Cuerpo de texto B1S*/
+.b1bl, .b1b, .b1sb, .b1m, .b1r, .b1 { font-size:1rem; line-height:1.375rem; margin:0 0 16px 0; }
+.b1bl { font-weight:800;}
+.b1b  { font-weight:700;}
+.b1sb { font-weight:600;}
+.b1m  { font-weight:500;}
+.b1r, .b1  { font-weight:400;}
+
+/*Cuerpo de texto (B1IT)*/
+.b1it { font-size:1rem; font-style:oblique; } 
+
+/*Botones CTA*/
+.cta  { font-size:1rem; font-weight:600; }
+
+/*Detalles (SD)*/
+.sdbl, .sdb, .sdsb, .sdm, .sdr, .sd, .sdit { font-size:0.875rem; line-height:1.1875rem; margin:0 0 16px 0; }
+.sdbl { font-weight:800;}
+.sdb  { font-weight:700;}
+.sdsb { font-weight:600;}
+.sdm  { font-weight:500;}
+.sdr,
+.sd  { font-weight:400;}
+.sdit { font-weight:400; font-style: oblique;}
+
+/*Detalles (XSDS)*/
+.xsdbl, .xsdb, .xsdsb, .xsdm, .xsdr, .xsd  { font-weight:400; font-size:0.75rem; line-height:1rem; margin:0 0 16px 0; }
+.xsdbl { font-weight:800;}
+.xsdb  { font-weight:700;}
+.xsdsb { font-weight:600;}
+.xsdm  { font-weight:500;}
+.xsdr,
+.xsd  { font-weight:400;}
+
+/*PATRIA*/
+.h1b.patria, .h1r.patria { font-size:3.5rem; line-height:3.75rem; }
+.h2b.patria, .h2r.patria { font-size:3.25rem; line-height:3.375rem; }
+.h3b.patria, .h3r.patria { font-size:2.5rem; line-height:2.75rem; }
+
+.h4b.patria, .h4r.patria { font-size:2.2rem; line-height:2.5rem; }
+.h5b.patria, .h5r.patria { font-size:2rem; line-height:2.2rem; }
+.h6b.patria, .h6r.patria { font-size:1.5rem; line-height:2rem; }
+
+.h3b, .h4b, .h5b, .h6b { font-weight:bold;}
+.h3r, .h4r, .h5r, .h6r { font-weight:normal;}
+
+/*FONTS*/
+.f--thin       { font-weight:100}
+.f--extralight { font-weight:200}
+.f--light      { font-weight:300}
+.f--normal     { font-weight:400} /* Default */
+.f--medium     { font-weight:500}
+.f--semibold   { font-weight:600}
+.f--bold       { font-weight:700}
+.f--extrabold  { font-weight:800}
+.f--black      { font-weight:900}
+
+.f--025  { font-size:.25rem;}
+.f--05   { font-size:.5rem;} 
+.f--075  { font-size:.75rem;} 
+.f--0875 { font-size:.875rem;} 
+.f--1    { font-size:1rem} /*default*/
+.f--125  { font-size:1.25rem} 
+.f--15   { font-size:1.5rem} 
+.f--175  { font-size:1.75rem} 
+.f--2,
+.f--2    { font-size:2rem} 
+.f--225  { font-size:2.25rem} 
+.f--25   { font-size:2.5rem} 
+.f--275  { font-size:2.75rem} 
+.f--3    { font-size:3rem}
+
+dt { font-weight:600; margin:0 0 8px 0;}
+dd { margin:0; line-height: 140%;}

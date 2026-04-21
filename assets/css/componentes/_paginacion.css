@@ -1,0 +1,14 @@
+.paginacion { display: flex; justify-content: center;}
+.pagination {display: flex; align-items: center;}
+ol.pagination__items { display:inline-flex; align-items:center; list-style-type:none; margin:0; padding: 0;}
+.group-pagination li a { text-decoration: none;}
+
+.pagination__item { display:inline-flex; align-items:center; justify-content:center; width:35px; height:44px; color:var(--txtLight); box-sizing:border-box;}
+.pagination__item[aria-current="page"] { width:30px; height:30px; border-radius:50%; background:var(--pguinda900); color: #fff;}
+.icon-link { display: inline-flex; align-items: center;}
+.icon-link img { filter: var(--filtroPrimario); width:24px;}
+
+/*paginacion--verde*/
+.paginacion--verde .pagination__item[aria-current="page"] { background:var(--pverde600)}
+.paginacion--verde a { color:var(--pverde900);}
+.icon-link img { filter:invert(13%) sepia(28%) saturate(2204%) hue-rotate(135deg) brightness(99%) contrast(102%);}

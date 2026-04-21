@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Gestor de víctimas y stock</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="DESCRIPCIÓN">
+    <meta name="keywords" content="PALABRAS CLAVE">
+    <meta property="og:title" content="Gestor de víctimas y stock">
+    <meta property="og:description" content="DESCRIPCIÓN">
+
+    <!-- LA RUTA DE LA IMAGEN OG:IMG DEBE SER ABSOLUTA  -->
+    <meta property="og:image" content="./assets/img/og-img.png">
+    <link rel="shortcut icon" href="https://www.gob.mx/resources/img/favicon.ico">
+
+    <!-- Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://framework-gb.cdn.gob.mx/gm/accesibilidad/css/gobmx-accesibilidad.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/estilos.css">
+
+</head>
+
+<body>
+
+    <div class="wrapper wrapper--ancho">
+
+        <!-- HEADER -->
+        <header class="header">
+            <!--Lleva al contenido principal cuando se navega con tabulador-->
+            <a class="irContent" href="#mainContent">Ir al contenido principal</a>
+
+            <section class="mexico">
+                <div class="mexico__contenedor">
+                    <div class="mexico__escudo">
+                        <a href="https://www.gob.mx/" class="mexico__aescudo">
+                            <img src="./assets/img/gobierno-mexico.svg" class="mexico__img"
+                                alt="Ir a la página de inicio del Gobierno de México">
+                        </a>
+                    </div>
+                    <div class="mexico__menu">
+                        <details class="mexico__details" open>
+                            <summary class="mexico__summary">
+                                <span class="mexico__span">Menú</span>
+                            </summary>
+                            <div class="mexico__detailsCont">
+                                <a href="https://www.gob.mx/tramites" class="mexico__a">Trámites</a>
+                                <a href="https://www.gob.mx/gobierno" class="mexico__a">Gobierno</a>
+                                <a href="https://www.gob.mx/" class="mexico__a" target="_blank" rel="noopener"
+                                    title="Ir a la página de búsqueda del Gobierno de México"><img
+                                        src="./assets/icons-base/header-lupa.svg" alt=""></a>
+                            </div>
+                        </details>
+                    </div>
+                </div>
+            </section>
+            <section class="subheader">
+                <div class="subheader__contenedor">
+
+                    <div class="iniciarSesion mt--2">
+                        <a href="#" class="iniciarSesion__a cta">Iniciar sesión <img src="assets/icons-base/llaveMX.svg" alt=""></a>
+                    </div>
+                    
+                </div>
+            </section>
+        </header>
+
+
+
+        <!-- MAIN -->
+        <main id="mainContent" class="portada">
+            
+            <div class="portada__nombre">
+                <h1 class="h0b">Gestor de atención a víctimas</h1>
+                <p class="h2m">Plataforma para centralización de la gestión de emergencias.</p>
+            </div>
+            
+            <div class="portada__login">
+                <div class="login">
+                    <img src="assets/icons-base/llaveMX-color.svg" alt="">
+                    <h2 class="sh0b mb--0">Te damos la bienvenida</h2>
+                    <a href="#" class="boton__primario boton--100">Iniciar sesión</a>
+                    <hr>
+                    <a href="#" class="login__nocuenta">¿Aún no tienes una cuenta Llave?</a>
+                    <a href="#" class="boton__secundario boton--100">Crear cuenta</a>
+                </div>
+            </div>
+        
+
+
+        </main>
+
+<!-- FOOTER -->
+      <footer class="footer">
+        <div class="footer__contenedor">
+          <!-- ESCUDO DEL GOBIERNO DE MEXICO -->
+          <div class="footer__mexico">
+            <img
+              src="https://framework-gb.cdn.gob.mx/gobmx/img/logo_blanco.svg"
+              alt="Gobierno de México"
+              class="footer__escudo"
+            />
+          </div>
+
+          <div class="footer__colCentral">
+            <!-- QUE ES GOB MX -->
+            <div class="footer__gobmx">
+              <details class="mexico__details" open>
+                <summary class="footer__summary footer__summary--gobmx">
+                  <span class="footer__tit">¿Qué es gob.mx?</span>
+                </summary>
+                <p class="mexico__detailsp">
+                  Es el portal único de trámites, información y participación
+                  ciudadana.
+                  <a
+                    href="https://www.gob.mx/que-es-gobmx"
+                    target="_blank"
+                    rel="noopener"
+                    title="El enlace abre en ventana nueva"
+                  >
+                    <b>Leer más</b>
+                  </a>
+                </p>
+              </details>
+            </div>
+
+            <!-- ENLACES -->
+            <div class="footer__enlaces">
+              <details class="mexico__details" open>
+                <summary class="footer__summary footer__summary--enlaces">
+                  <span class="footer__tit">Enlaces</span>
+                </summary>
+                <div class="footer__enlacesList">
+                  <div class="footer__enlacesCol1">
+                    <a
+                      class="footer__enlacesLink"
+                      href="https://datos.gob.mx/"
+                      target="_blank"
+                      rel="noopener"
+                      title="El enlace abre en ventana nueva"
+                    >
+                      Datos
+                    </a>
+
+                    <a
+                      class="footer__enlacesLink"
+                      href="https://www.gob.mx/inafed/acciones-y-programas/portal-de-obligaciones-de-transparencia-pot"
+                      target="_blank"
+                      rel="noopener"
+                      title="El enlace abre en ventana nueva"
+                    >
+                      Portal de Obligaciones de Transparencia
+                    </a>
+
+                    <a
+                      class="footer__enlacesLink"
+                      href="https://www.plataformadetransparencia.org.mx/Inicio"
+                      target="_blank"
+                      rel="noopener"
+                      title="El enlace abre en ventana nueva"
+                    >
+                      Plataforma Nacional de Transparencia
+                    </a>
+
+                    <a
+                      class="footer__enlacesLink"
+                      href="https://alertadores.buengobierno.gob.mx/"
+                      target="_blank"
+                      rel="noopener"
+                      title="El enlace abre en ventana nueva"
+                    >
+                      Alerta
+                    </a>
+                  </div>
+
+                  <div class="footer__enlacesCol2">
+                    <a
+                      class="footer__enlacesLink"
+                      href="#"
+                      target="_blank"
+                      rel="noopener"
+                      title="El enlace abre en ventana nueva"
+                    >
+                      Administraciones anteriores
+                    </a>
+
+                    <a
+                      class="footer__enlacesLink"
+                      href="https://www.gob.mx/accesibilidad"
+                      target="_blank"
+                      rel="noopener"
+                      title="El enlace abre en ventana nueva"
+                    >
+                      Declaración de accesibilidad
+                    </a>
+
+                    <a
+                      class="footer__enlacesLink"
+                      href="http://www.ordenjuridico.gob.mx/"
+                      target="_blank"
+                      rel="noopener"
+                      title="El enlace abre en ventana nueva"
+                    >
+                      Marco jurídico
+                    </a>
+
+                    <a
+                      class="footer__enlacesLink"
+                      href="#"
+                      target="_blank"
+                      rel="noopener"
+                      title="El enlace abre en ventana nueva"
+                    >
+                      Política de seguridad
+                    </a>
+
+                    <a
+                      class="footer__enlacesLink"
+                      href="https://www.gob.mx/terminos"
+                      target="_blank"
+                      rel="noopener"
+                      title="El enlace abre en ventana nueva"
+                    >
+                      Términos y condiciones
+                    </a>
+
+                    <a
+                      class="footer__enlacesLink"
+                      href="#"
+                      target="_blank"
+                      rel="noopener"
+                      title="El enlace abre en ventana nueva"
+                    >
+                      Aviso de privacidad
+                    </a>
+
+                    <a
+                      class="footer__enlacesLink"
+                      href="#"
+                      target="_blank"
+                      rel="noopener"
+                      title="El enlace abre en ventana nueva"
+                    >
+                      Aviso de privacidad simplificado
+                    </a>
+
+                    <a
+                      class="footer__enlacesLink"
+                      href="#"
+                      target="_blank"
+                      rel="noopener"
+                      title="El enlace abre en ventana nueva"
+                    >
+                      Mapa de sitio
+                    </a>
+                  </div>
+                </div>
+              </details>
+            </div>
+          </div>
+
+          <!-- REDES -->
+          <div class="footer__redes">
+            <p class="footer__denuncia">
+              <a
+                href="https://sidec.buengobierno.gob.mx/#!/"
+                target="_blank"
+                rel="noopener"
+                title="El enlace abre en ventana nueva"
+              >
+                Denuncia contra servidores públicos
+              </a>
+            </p>
+
+            <div class="footer__siguenosCont">
+              <p class="footer__siguenosTit">Síguenos en</p>
+              <ul class="footer__redes__ul">
+                <li>
+                  <a
+                    target="_blank"
+                    rel="noopener"
+                    title="El enlace abre en ventana nueva"
+                    href="https://www.facebook.com/gobmexico"
+                    aria-label="Facebook de Presidencia"
+                  >
+                    <img alt="Facebook" src="assets/icons-base/facebook.svg" />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    target="_blank"
+                    rel="noopener"
+                    title="El enlace abre en ventana nueva"
+                    href="https://twitter.com/GobiernoMX"
+                    aria-label="Twitter de Presidencia"
+                  >
+                    <img alt="Twitter" src="assets/icons-base/twitter-x.svg" />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    target="_blank"
+                    rel="noopener"
+                    title="El enlace abre en ventana nueva"
+                    href="https://www.instagram.com/gobmexico/"
+                    aria-label="Instagram de Presidencia"
+                  >
+                    <img
+                      alt="instagram"
+                      src="assets/icons-base/instagram.svg"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    target="_blank"
+                    rel="noopener"
+                    title="El enlace abre en ventana nueva"
+                    href="https://www.youtube.com/@gobiernodemexico"
+                    aria-label="Youtube de Presidencia"
+                  >
+                    <img alt="youtube" src="assets/icons-base/youtube.svg" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer__079">
+              <div class="footer__079col1">
+                <img
+                  src="assets/icons-base/footer-flor.svg"
+                  alt=""
+                  class="footer__079img"
+                />
+                <span class="footer__079num">079</span>
+              </div>
+              <div class="footer__079info">
+                <span class="footer__079txt"
+                  >Comunícate, <br />
+                  estamos para ayudarte</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+
+
+    </div>
+    <script>
+        // Seleccionamos los elementos
+        const btnAbrir = document.getElementById('toggleFiltrosBtn');
+        const btnCerrar = document.querySelector('.close-filtros-btn');
+        const contenedorFiltros = document.querySelector('.filtros');
+
+        // Evento para ABRIR (Añade la clase)
+        btnAbrir.addEventListener('click', () => {
+            contenedorFiltros.classList.add('open');
+        });
+
+        // Evento para CERRAR (Quita la clase)
+        btnCerrar.addEventListener('click', () => {
+            contenedorFiltros.classList.remove('open');
+        });
+    </script>
+
+    <script src="./assets/js/header-footer-details.js"></script>
+    <script src="./assets/js/details-deskOpen.js"></script>
+    <script src="./assets/js/aside-show-hide.js"></script>
+    <script src="./assets/js/aside-movil-height.js"></script>
+    <script src="./assets/js/details-cierra-onclickout.js"></script>
+    <script src="./assets/js/tabla-responsiva-sombreado.js"></script>
+
+</body>
+
+</html>
