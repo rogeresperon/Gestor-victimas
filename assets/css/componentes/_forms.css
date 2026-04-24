@@ -191,7 +191,6 @@ textarea.form__control { resize:vertical; min-height:3em;}
 /*FIELDSET*/
 .form__fieldset { margin:0; padding:0; border:none; }
 .form__legend { font-weight:600; margin-bottom:1rem;}
-.form__fieldset .form__label { font-weight:normal}
 .form__fieldset .form__label b { font-weight:600}
 
 /*INPUT FILE*/

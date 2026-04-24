@@ -445,6 +445,59 @@
 
             </section>
 
+
+            <!--Filtros horizontal-->
+                <div class="mapa__filtros mapa__filtros--horizontal">
+                    <div class="mapa__filtros--horizontal1">
+                        <div class="form__grupo">
+                            <label for="form01" class="form__label">Nombre del siniestro</label>
+                            <input type="text" class="form__control" placeholder="Busca por nombre o folio" id="form01">
+                        </div>
+                        
+                        <div class="form__grupo">
+                            <fieldset class="form__fieldset">
+                                <legend class="form__label">Periodo del siniestro</legend>
+                                
+                                <div class="form__periodo">
+                                    <div class="form__rango1">
+                                        <label class="oculto" for="fecha1">Fecha inicial</label>
+                                        <input type="date" id="fecha1" class="form__control form__date">
+                                    </div>
+                                    <span aria-hidden="true">-</span>
+                                    <div class="form__rango2">
+                                        <label class="oculto" for="fecha2">Fecha final</label>
+                                        <input type="date" id="fecha2" class="form__control form__date">
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+                        
+                        <div class="form__grupo">
+                            <label for="form03" class="form__label">Tipo de siniestro</label>
+                            <select name="" id="form03" class="form__select">
+                                <option value="">Categoría</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form__grupo">
+                            <label for="form04" class="form__label">Entidad</label>
+                            <select name="" id="form04" class="form__select">
+                                <option value="">Selecciona un estado</option>
+                            </select>
+                        </div>
+                        
+                        <button type="submit" class="boton__secundario">Buscar</button>
+                    </div>
+
+                    <div class="mapa__filtros--horizontal2">
+                    
+                        <button type="button" class="boton__fantasma">Borrar filtros <img src="./assets/icons-base/trash-can.svg" alt=""></button>
+                    </div>
+
+                </div>
+                
+
+
             <!--Mapa-->
             <section class="mapa__section">
 
@@ -456,21 +509,23 @@
                     </div>
 
                     <div class="form__grupo">
-                        <label class="form__label">Periodo del siniestro</label>
-                        
-                        <div class="form__periodo">
-                            <div class="form__rango1">
-                                <span class="oculto">Fecha inicial</span>
-                                <input type="date" id="fecha1" class="form__control">
+                        <fieldset class="form__fieldset">
+                            <legend class="form__label">Periodo del siniestro</legend>
+                            
+                            <div class="form__periodo">
+                                <div class="form__rango1">
+                                    <label class="oculto" for="fecha1">Fecha inicial</label>
+                                    <input type="date" id="fecha1" class="form__control form__date">
+                                </div>
+                                <span aria-hidden="true">-</span>
+                                <div class="form__rango2">
+                                    <label class="oculto" for="fecha2">Fecha final</label>
+                                    <input type="date" id="fecha2" class="form__control form__date">
+                                </div>
                             </div>
-                            -
-                            <div class="form__rango2">
-                                <span class="oculto">Fecha final</span>
-                                <input type="date" id="fecha2" class="form__control">
-                            </div>
-                        </div>
+                        </fieldset>
                     </div>
-         
+
                     <div class="form__grupo">
                         <label for="form03" class="form__label">Tipo de siniestro</label>
                         <select name="" id="form03" class="form__select">
@@ -484,11 +539,11 @@
                             <option value="">Selecciona un estado</option>
                         </select>
                     </div>
-
+                    
                     <button type="submit" class="boton__primario boton--100">Aplicar filtros</button>
-
+                    
                     <button type="button" class="boton__fantasma boton--100">Limpiar filtros</button>
-
+  
                 </div>
 
                 <div class="mapa__mapa">
@@ -536,6 +591,27 @@
                     <span class="siniestroTipo__circulo">
                         <img src="./assets/icons/erupcion.svg" alt="Erupción volcánica"  class="siniestroTipo__icono">
                     </span>
+                    
+                    <dl class="mapa__referencia">
+
+                        <div>
+                            <dt class="sdsb mapa__dt">
+                                <img src="./assets/icons/zona-especifica.svg" alt="" aria-hidden="true" class="mapa__dtimg">
+                                Zona específica
+                            </dt>
+                            <dd class="xsdr mapa__dd">Siniestros en solo una entidad</dd>
+                        </div>
+
+                        <div>
+                            <dt class="sdsb mapa__dt">
+                                <img src="./assets/icons/zona-geografica.svg" alt="" aria-hidden="true" class="mapa__dtimg">
+                                Zona geográfica
+                            </dt>
+                            <dd class="xsdr mapa__dd">Siniestros en más de una entidad</dd>
+                        </div>
+                    
+                    </dl>
+                    
                     
                 </div>
 
@@ -680,11 +756,11 @@
                                     </td>
                     
                                     <td class="tabla01__tbodyTd --center">
-                                        
+                                        3,500
                                     </td>
                     
                                     <td class="tabla01__tbodyTd --center">
-                                        3,500
+                                        <a href="#" class="color--pguinda600"> Ver detalle</a>
                                     </td>
                     
                                 </tr>
