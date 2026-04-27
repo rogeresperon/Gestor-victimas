@@ -325,8 +325,7 @@
                 </li>
                 <li class="menuMain__item">
                     <a href="#" class="menuMain__link menuMain__linkSm">
-                        <img src="././assets/icons-base/catalog.svg" alt="" aria-hidden="true"
-                            class="menuMain__icono">
+                        <img src="././assets/icons-base/catalog.svg" alt="" aria-hidden="true" class="menuMain__icono">
                         <span class="menuMain__txt">Gestor de inventario</span>
                     </a>
                 </li>
@@ -362,8 +361,8 @@
             </section>
 
             <!--Totales-->
-            <section class="fichaTotales__section">                
-                
+            <section class="fichaTotales__section">
+
                 <!--Unidades de salud: Eliminar cuando no se necesiten-->
                 <div class="cajaVictimas--200 fichaTotales__unidades">
 
@@ -447,62 +446,8 @@
 
 
             <!--Filtros horizontal-->
-                <div class="mapa__filtros mapa__filtros--horizontal">
-                    <div class="mapa__filtros--horizontal1">
-                        <div class="form__grupo">
-                            <label for="form01" class="form__label">Nombre del siniestro</label>
-                            <input type="text" class="form__control" placeholder="Busca por nombre o folio" id="form01">
-                        </div>
-                        
-                        <div class="form__grupo">
-                            <fieldset class="form__fieldset">
-                                <legend class="form__label">Periodo del siniestro</legend>
-                                
-                                <div class="form__periodo">
-                                    <div class="form__rango1">
-                                        <label class="oculto" for="fecha1">Fecha inicial</label>
-                                        <input type="date" id="fecha1" class="form__control form__date">
-                                    </div>
-                                    <span aria-hidden="true">-</span>
-                                    <div class="form__rango2">
-                                        <label class="oculto" for="fecha2">Fecha final</label>
-                                        <input type="date" id="fecha2" class="form__control form__date">
-                                    </div>
-                                </div>
-                            </fieldset>
-                        </div>
-                        
-                        <div class="form__grupo">
-                            <label for="form03" class="form__label">Tipo de siniestro</label>
-                            <select name="" id="form03" class="form__select">
-                                <option value="">Categoría</option>
-                            </select>
-                        </div>
-                        
-                        <div class="form__grupo">
-                            <label for="form04" class="form__label">Entidad</label>
-                            <select name="" id="form04" class="form__select">
-                                <option value="">Selecciona un estado</option>
-                            </select>
-                        </div>
-                        
-                        <button type="submit" class="boton__secundario">Buscar</button>
-                    </div>
-
-                    <div class="mapa__filtros--horizontal2">
-                    
-                        <button type="button" class="boton__fantasma">Borrar filtros <img src="./assets/icons-base/trash-can.svg" alt=""></button>
-                    </div>
-
-                </div>
-                
-
-
-            <!--Mapa-->
-            <section class="mapa__section">
-
-                <!--Filtros: Eliminar cuando no se necesiten-->
-                <div class="mapa__filtros rowgap--24">
+            <div class="mapa__filtros mapa__filtros--horizontal">
+                <div class="mapa__filtros--horizontal1">
                     <div class="form__grupo">
                         <label for="form01" class="form__label">Nombre del siniestro</label>
                         <input type="text" class="form__control" placeholder="Busca por nombre o folio" id="form01">
@@ -511,7 +456,7 @@
                     <div class="form__grupo">
                         <fieldset class="form__fieldset">
                             <legend class="form__label">Periodo del siniestro</legend>
-                            
+
                             <div class="form__periodo">
                                 <div class="form__rango1">
                                     <label class="oculto" for="fecha1">Fecha inicial</label>
@@ -539,64 +484,181 @@
                             <option value="">Selecciona un estado</option>
                         </select>
                     </div>
-                    
+
+                    <button type="submit" class="boton__secundario">Buscar</button>
+                </div>
+
+                <div class="mapa__filtros--horizontal2">
+
+                    <button type="button" class="boton__fantasma">Borrar filtros <img
+                            src="./assets/icons-base/trash-can.svg" alt=""></button>
+                </div>
+
+            </div>
+
+
+
+            <!--Mapa-->
+            <section class="mapa__section">
+
+                <!--Filtros: Eliminar cuando no se necesiten-->
+                <div class="mapa__filtros rowgap--24">
+                    <div class="form__grupo">
+                        <label for="form01" class="form__label">Nombre del siniestro</label>
+                        <input type="text" class="form__control" placeholder="Busca por nombre o folio" id="form01">
+                    </div>
+
+                    <div class="form__grupo">
+                        <fieldset class="form__fieldset">
+                            <legend class="form__label">Periodo del siniestro</legend>
+
+                            <div class="form__periodo">
+                                <div class="form__rango1">
+                                    <label class="oculto" for="fecha1">Fecha inicial</label>
+                                    <input type="date" id="fecha1" class="form__control form__date">
+                                </div>
+                                <span aria-hidden="true">-</span>
+                                <div class="form__rango2">
+                                    <label class="oculto" for="fecha2">Fecha final</label>
+                                    <input type="date" id="fecha2" class="form__control form__date">
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+
+                    <div class="form__grupo">
+                        <label for="form03" class="form__label">Tipo de siniestro</label>
+                        <select name="" id="form03" class="form__select">
+                            <option value="">Categoría</option>
+                        </select>
+                    </div>
+
+                    <div class="form__grupo">
+                        <label for="form04" class="form__label">Entidad</label>
+                        <select name="" id="form04" class="form__select">
+                            <option value="">Selecciona un estado</option>
+                        </select>
+                    </div>
+
                     <button type="submit" class="boton__primario boton--100">Aplicar filtros</button>
-                    
+
                     <button type="button" class="boton__fantasma boton--100">Limpiar filtros</button>
-  
+
                 </div>
 
                 <div class="mapa__mapa">
                     Aquí va el mapa
-                    <span class="siniestroTipo__circulo">
-                        <img src="./assets/icons/calor.svg" alt="Calor extremo"  class="siniestroTipo__icono">
-                    </span>
+                    <hr>
+                    <div class="dflex--colgap--16">
+                        <div>
+                            Iconos verdes
+                            <span class="siniestroTipo__circulo siniestroTipo--verde">
+                                <img src="./assets/icons/calor.svg" alt="Calor extremo" class="siniestroTipo__icono">
+                            </span>
+                        
+                            <span class="siniestroTipo__circulo siniestroTipo--verde">
+                                <img src="./assets/icons/huracan.svg" alt="Huracán" class="siniestroTipo__icono">
+                            </span>
+                        
+                            <span class="siniestroTipo__circulo siniestroTipo--verde">
+                                <img src="./assets/icons/inundacion.svg" alt="Inundación" class="siniestroTipo__icono">
+                            </span>
+                        
+                            <span class="siniestroTipo__circulo siniestroTipo--verde">
+                                <img src="./assets/icons/incendio.svg" alt="Incendio" class="siniestroTipo__icono">
+                            </span>
+                        
+                            <span class="siniestroTipo__circulo siniestroTipo--verde">
+                                <img src="./assets/icons/incendio-forestal.svg" alt="Incendio forestal"
+                                    class="siniestroTipo__icono">
+                            </span>
+                        
+                            <span class="siniestroTipo__circulo siniestroTipo--verde">
+                                <img src="./assets/icons/sequia.svg" alt="Sequía" class="siniestroTipo__icono">
+                            </span>
+                        
+                            <span class="siniestroTipo__circulo siniestroTipo--verde">
+                                <img src="./assets/icons/terremoto.svg" alt="Terremoto" class="siniestroTipo__icono">
+                            </span>
+                        
+                            <span class="siniestroTipo__circulo siniestroTipo--verde">
+                                <img src="./assets/icons/tormenta-hielo.svg" alt="Tormentas de hielo y nieve"
+                                    class="siniestroTipo__icono">
+                            </span>
+                        
+                            <span class="siniestroTipo__circulo siniestroTipo--verde">
+                                <img src="./assets/icons/tornado.svg" alt="Tornado" class="siniestroTipo__icono">
+                            </span>
+                        
+                            <span class="siniestroTipo__circulo siniestroTipo--verde">
+                                <img src="./assets/icons/tsunami.svg" alt="Tsunami" class="siniestroTipo__icono">
+                            </span>
+                        
+                            <span class="siniestroTipo__circulo siniestroTipo--verde">
+                                <img src="./assets/icons/erupcion.svg" alt="Erupción volcánica"
+                                    class="siniestroTipo__icono">
+                            </span>
 
-                    <span class="siniestroTipo__circulo">
-                        <img src="./assets/icons/huracan.svg" alt="Huracán"  class="siniestroTipo__icono">
-                    </span>
+                        </div>
+                        
+                        <div>
+                            Iconos guindas
+                            <span class="siniestroTipo__circulo siniestroTipo--guinda">
+                                <img src="./assets/icons/calor.svg" alt="Calor extremo" class="siniestroTipo__icono">
+                            </span>
+                        
+                            <span class="siniestroTipo__circulo siniestroTipo--guinda">
+                                <img src="./assets/icons/huracan.svg" alt="Huracán" class="siniestroTipo__icono">
+                            </span>
+                        
+                            <span class="siniestroTipo__circulo siniestroTipo--guinda">
+                                <img src="./assets/icons/inundacion.svg" alt="Inundación" class="siniestroTipo__icono">
+                            </span>
+                        
+                            <span class="siniestroTipo__circulo siniestroTipo--guinda">
+                                <img src="./assets/icons/incendio.svg" alt="Incendio" class="siniestroTipo__icono">
+                            </span>
+                        
+                            <span class="siniestroTipo__circulo siniestroTipo--guinda">
+                                <img src="./assets/icons/incendio-forestal.svg" alt="Incendio forestal"
+                                    class="siniestroTipo__icono">
+                            </span>
+                        
+                            <span class="siniestroTipo__circulo siniestroTipo--guinda">
+                                <img src="./assets/icons/sequia.svg" alt="Sequía" class="siniestroTipo__icono">
+                            </span>
+                        
+                            <span class="siniestroTipo__circulo siniestroTipo--guinda">
+                                <img src="./assets/icons/terremoto.svg" alt="Terremoto" class="siniestroTipo__icono">
+                            </span>
+                        
+                            <span class="siniestroTipo__circulo siniestroTipo--guinda">
+                                <img src="./assets/icons/tormenta-hielo.svg" alt="Tormentas de hielo y nieve"
+                                    class="siniestroTipo__icono">
+                            </span>
+                        
+                            <span class="siniestroTipo__circulo siniestroTipo--guinda">
+                                <img src="./assets/icons/tornado.svg" alt="Tornado" class="siniestroTipo__icono">
+                            </span>
+                        
+                            <span class="siniestroTipo__circulo siniestroTipo--guinda">
+                                <img src="./assets/icons/tsunami.svg" alt="Tsunami" class="siniestroTipo__icono">
+                            </span>
+                        
+                            <span class="siniestroTipo__circulo siniestroTipo--guinda">
+                                <img src="./assets/icons/erupcion.svg" alt="Erupción volcánica"
+                                    class="siniestroTipo__icono">
+                            </span>
 
-                    <span class="siniestroTipo__circulo">
-                        <img src="./assets/icons/inundacion.svg" alt="Inundación"  class="siniestroTipo__icono">
-                    </span>
+                        </div>
+                    </div>
 
-                    <span class="siniestroTipo__circulo">
-                        <img src="./assets/icons/incendio.svg" alt="Incendio"  class="siniestroTipo__icono">
-                    </span>
-
-                    <span class="siniestroTipo__circulo">
-                        <img src="./assets/icons/incendio-forestal.svg" alt="Incendio forestal"  class="siniestroTipo__icono">
-                    </span>
-
-                    <span class="siniestroTipo__circulo">
-                        <img src="./assets/icons/sequia.svg" alt="Sequía"  class="siniestroTipo__icono">
-                    </span>
-
-                    <span class="siniestroTipo__circulo">
-                        <img src="./assets/icons/terremoto.svg" alt="Terremoto"  class="siniestroTipo__icono">
-                    </span>
-
-                    <span class="siniestroTipo__circulo">
-                        <img src="./assets/icons/tormenta-hielo.svg" alt="Tormentas de hielo y nieve"  class="siniestroTipo__icono">
-                    </span>
-
-                    <span class="siniestroTipo__circulo">
-                        <img src="./assets/icons/tornado.svg" alt="Tornado"  class="siniestroTipo__icono">
-                    </span>
-
-                    <span class="siniestroTipo__circulo">
-                        <img src="./assets/icons/tsunami.svg" alt="Tsunami"  class="siniestroTipo__icono">
-                    </span>
-
-                    <span class="siniestroTipo__circulo">
-                        <img src="./assets/icons/erupcion.svg" alt="Erupción volcánica"  class="siniestroTipo__icono">
-                    </span>
-                    
                     <dl class="mapa__referencia">
 
                         <div>
                             <dt class="sdsb mapa__dt">
-                                <img src="./assets/icons/zona-especifica.svg" alt="" aria-hidden="true" class="mapa__dtimg">
+                                <img src="./assets/icons/zona-especifica.svg" alt="" aria-hidden="true"
+                                    class="mapa__dtimg">
                                 Zona específica
                             </dt>
                             <dd class="xsdr mapa__dd">Siniestros en solo una entidad</dd>
@@ -604,15 +666,16 @@
 
                         <div>
                             <dt class="sdsb mapa__dt">
-                                <img src="./assets/icons/zona-geografica.svg" alt="" aria-hidden="true" class="mapa__dtimg">
+                                <img src="./assets/icons/zona-geografica.svg" alt="" aria-hidden="true"
+                                    class="mapa__dtimg">
                                 Zona geográfica
                             </dt>
                             <dd class="xsdr mapa__dd">Siniestros en más de una entidad</dd>
                         </div>
-                    
+
                     </dl>
-                    
-                    
+
+
                 </div>
 
             </section>
@@ -641,7 +704,7 @@
                                             </button>
                                         </div>
                                     </th>
-                    
+
                                     <th scope="col" class="tabla01__theadTh">
                                         <div>
                                             <span>Nombre</span>
@@ -653,7 +716,7 @@
                                             </button>
                                         </div>
                                     </th>
-                                    
+
                                     <th scope="col" class="tabla01__theadTh">
                                         <div>
                                             <span>Tipo</span>
@@ -665,7 +728,7 @@
                                             </button>
                                         </div>
                                     </th>
-                    
+
                                     <th scope="col" class="tabla01__theadTh">
                                         <div>
                                             <span>Fecha</span>
@@ -677,7 +740,7 @@
                                             </button>
                                         </div>
                                     </th>
-                    
+
                                     <th scope="col" class="tabla01__theadTh">
                                         <div>
                                             <span>Ubicación</span>
@@ -689,7 +752,7 @@
                                             </button>
                                         </div>
                                     </th>
-                    
+
                                     <th scope="col" class="tabla01__theadTh">
                                         <div>
                                             <span>Entidades afectadas</span>
@@ -701,7 +764,7 @@
                                             </button>
                                         </div>
                                     </th>
-                    
+
                                     <th scope="col" class="tabla01__theadTh">
                                         <div>
                                             <span>Víctimas totales</span>
@@ -713,7 +776,7 @@
                                             </button>
                                         </div>
                                     </th>
-                    
+
                                     <th scope="col" class="tabla01__theadTh">
                                         <div>
                                             <span>Detalle</span>
@@ -725,8 +788,8 @@
                                             </button>
                                         </div>
                                     </th>
-                                    
-                    
+
+
                                 </tr>
                             </thead>
                             <tbody>
@@ -734,39 +797,39 @@
                                     <td class="tabla01__tbodyTd --center">
                                         PME380607P35
                                     </td>
-                    
+
                                     <td class="tabla01__tbodyTd --center">
                                         Edificio de Hacienda
                                     </td>
-                    
+
                                     <td class="tabla01__tbodyTd --center">
                                         Erupción volcánica
                                     </td>
-                    
+
                                     <td class="tabla01__tbodyTd --center">
                                         30/05/2023
                                     </td>
-                    
+
                                     <td class="tabla01__tbodyTd --center">
                                         22.1537, -100.9839
                                     </td>
-                    
+
                                     <td class="tabla01__tbodyTd --center">
                                         Hidalgo, Aguascalientes, Veracruz
                                     </td>
-                    
+
                                     <td class="tabla01__tbodyTd --center">
                                         3,500
                                     </td>
-                    
+
                                     <td class="tabla01__tbodyTd --center">
                                         <a href="#" class="color--pguinda600"> Ver detalle</a>
                                     </td>
-                    
+
                                 </tr>
                             </tbody>
                         </table>
-                        
+
                     </div>
                 </div>
                 <p class="sdr mb--0">Mostrando registros 1 a 10, de 751</p>
@@ -799,7 +862,8 @@
                 </div>
 
                 <div class="--center mt--16">
-                    <button type="button" class="boton__secundario mx--auto boton--verde">Exportar datos <img src="./assets/icons-base/ico-descargar.svg" alt=""></button>
+                    <button type="button" class="boton__secundario mx--auto boton--verde">Exportar datos <img
+                            src="./assets/icons-base/ico-descargar.svg" alt=""></button>
                 </div>
             </section>
 
@@ -812,11 +876,11 @@
                     <div class="search--field search--field--100">
                         <label class="oculto" for="filtross">Filtrar por nombre o folio de la persona.</label>
                         <div class="form-item-wrapper">
-   
+
                             <img src="./assets/icons-base/search.svg" alt="" aria-hidden="true">
 
-                            <input type="text" class="form-item buscar" placeholder="Filtra por nombre o folio de la persona."
-                                id="filtross">
+                            <input type="text" class="form-item buscar"
+                                placeholder="Filtra por nombre o folio de la persona." id="filtross">
                             <button type="button" class="clear-button">
                                 <span class="oculto">Borrar</span>
                                 <img src="./assets/icons-base/misuse--outline.svg" alt="" aria-hidden="true">
@@ -845,7 +909,7 @@
                                             </button>
                                         </div>
                                     </th>
-                    
+
                                     <th scope="col" class="tabla01__theadTh">
                                         <div>
                                             <span>Nombre</span>
@@ -857,7 +921,7 @@
                                             </button>
                                         </div>
                                     </th>
-                                    
+
                                     <th scope="col" class="tabla01__theadTh">
                                         <div>
                                             <span>Sexo</span>
@@ -869,7 +933,7 @@
                                             </button>
                                         </div>
                                     </th>
-                    
+
                                     <th scope="col" class="tabla01__theadTh">
                                         <div>
                                             <span>Edad</span>
@@ -881,7 +945,7 @@
                                             </button>
                                         </div>
                                     </th>
-                    
+
                                     <th scope="col" class="tabla01__theadTh">
                                         <div>
                                             <span>Estatus de la víctima</span>
@@ -893,7 +957,7 @@
                                             </button>
                                         </div>
                                     </th>
-                    
+
                                     <th scope="col" class="tabla01__theadTh">
                                         <div>
                                             <span>Situación de la víctima</span>
@@ -905,7 +969,7 @@
                                             </button>
                                         </div>
                                     </th>
-                    
+
                                     <th scope="col" class="tabla01__theadTh">
                                         <div>
                                             <span>Contacto</span>
@@ -917,7 +981,7 @@
                                             </button>
                                         </div>
                                     </th>
-                    
+
                                     <th scope="col" class="tabla01__theadTh">
                                         <div>
                                             <span>Número de contacto</span>
@@ -929,8 +993,8 @@
                                             </button>
                                         </div>
                                     </th>
-                                    
-                    
+
+
                                 </tr>
                             </thead>
                             <tbody>
@@ -938,227 +1002,227 @@
                                     <td class="tabla01__tbodyTd --center">
                                         PME380607P35
                                     </td>
-                    
+
                                     <td class="tabla01__tbodyTd --center">
                                         Verónica S. Castro
                                     </td>
-                    
+
                                     <td class="tabla01__tbodyTd --center">
                                         F
                                     </td>
-                    
+
                                     <td class="tabla01__tbodyTd --center">
                                         32
                                     </td>
-                    
+
                                     <td class="tabla01__tbodyTd --center">
                                         <span class="pildora pildora--error borde--no">
                                             <span class="pildora--dot"></span>
                                             Fallecida
                                         </span>
                                     </td>
-                    
+
                                     <td class="tabla01__tbodyTd --center">
                                         Atendida en sitio
                                     </td>
-                    
+
                                     <td class="tabla01__tbodyTd --center">
                                         Juan Pérez
                                     </td>
-                    
+
                                     <td class="tabla01__tbodyTd --center">
                                         555-0456
                                     </td>
-                    
+
                                 </tr>
                                 <tr class="tabla01__tbodyTr">
                                     <td class="tabla01__tbodyTd --center">
                                         PME380607P35
                                     </td>
-                    
+
                                     <td class="tabla01__tbodyTd --center">
                                         Verónica S. Castro
                                     </td>
-                    
+
                                     <td class="tabla01__tbodyTd --center">
                                         F
                                     </td>
-                    
+
                                     <td class="tabla01__tbodyTd --center">
                                         32
                                     </td>
-                    
+
                                     <td class="tabla01__tbodyTd --center">
                                         <span class="pildora pildora--naranja borde--no">
                                             <span class="pildora--dot"></span>
                                             Lesionada
                                         </span>
                                     </td>
-                    
+
                                     <td class="tabla01__tbodyTd --center">
                                         Atendida en sitio
                                     </td>
-                    
+
                                     <td class="tabla01__tbodyTd --center">
                                         Juan Pérez
                                     </td>
-                    
+
                                     <td class="tabla01__tbodyTd --center">
                                         555-0456
                                     </td>
-                    
+
                                 </tr>
                                 <tr class="tabla01__tbodyTr">
                                     <td class="tabla01__tbodyTd --center">
                                         PME380607P35
                                     </td>
-                    
+
                                     <td class="tabla01__tbodyTd --center">
                                         Verónica S. Castro
                                     </td>
-                    
+
                                     <td class="tabla01__tbodyTd --center">
                                         F
                                     </td>
-                    
+
                                     <td class="tabla01__tbodyTd --center">
                                         32
                                     </td>
-                    
+
                                     <td class="tabla01__tbodyTd --center">
                                         <span class="pildora pildora--alerta borde--no">
                                             <span class="pildora--dot"></span>
                                             Damnificada
                                         </span>
                                     </td>
-                    
+
                                     <td class="tabla01__tbodyTd --center">
                                         Atendida en sitio
                                     </td>
-                    
+
                                     <td class="tabla01__tbodyTd --center">
                                         Juan Pérez
                                     </td>
-                    
+
                                     <td class="tabla01__tbodyTd --center">
                                         555-0456
                                     </td>
-                    
+
                                 </tr>
                                 <tr class="tabla01__tbodyTr">
                                     <td class="tabla01__tbodyTd --center">
                                         PME380607P35
                                     </td>
-                    
+
                                     <td class="tabla01__tbodyTd --center">
                                         Verónica S. Castro
                                     </td>
-                    
+
                                     <td class="tabla01__tbodyTd --center">
                                         F
                                     </td>
-                    
+
                                     <td class="tabla01__tbodyTd --center">
                                         32
                                     </td>
-                    
+
                                     <td class="tabla01__tbodyTd --center">
                                         <span class="pildora pildora--dorado borde--no">
                                             <span class="pildora--dot"></span>
                                             Desaparecida
                                         </span>
                                     </td>
-                    
+
                                     <td class="tabla01__tbodyTd --center">
                                         Atendida en sitio
                                     </td>
-                    
+
                                     <td class="tabla01__tbodyTd --center">
                                         Juan Pérez
                                     </td>
-                    
+
                                     <td class="tabla01__tbodyTd --center">
                                         555-0456
                                     </td>
-                    
+
                                 </tr>
                                 <tr class="tabla01__tbodyTr">
                                     <td class="tabla01__tbodyTd --center">
                                         PME380607P35
                                     </td>
-                    
+
                                     <td class="tabla01__tbodyTd --center">
                                         Verónica S. Castro
                                     </td>
-                    
+
                                     <td class="tabla01__tbodyTd --center">
                                         F
                                     </td>
-                    
+
                                     <td class="tabla01__tbodyTd --center">
                                         32
                                     </td>
-                    
+
                                     <td class="tabla01__tbodyTd --center">
                                         <span class="pildora pildora--neutro borde--no">
                                             <span class="pildora--dot"></span>
                                             No especificado
                                         </span>
                                     </td>
-                    
+
                                     <td class="tabla01__tbodyTd --center">
                                         Atendida en sitio
                                     </td>
-                    
+
                                     <td class="tabla01__tbodyTd --center">
                                         Juan Pérez
                                     </td>
-                    
+
                                     <td class="tabla01__tbodyTd --center">
                                         555-0456
                                     </td>
-                    
+
                                 </tr>
                                 <tr class="tabla01__tbodyTr">
                                     <td class="tabla01__tbodyTd --center">
                                         PME380607P35
                                     </td>
-                    
+
                                     <td class="tabla01__tbodyTd --center">
                                         Verónica S. Castro
                                     </td>
-                    
+
                                     <td class="tabla01__tbodyTd --center">
                                         F
                                     </td>
-                    
+
                                     <td class="tabla01__tbodyTd --center">
                                         32
                                     </td>
-                    
+
                                     <td class="tabla01__tbodyTd --center">
                                         <span class="pildora pildora--exito borde--no">
                                             <span class="pildora--dot"></span>
                                             Encontrada
                                         </span>
                                     </td>
-                    
+
                                     <td class="tabla01__tbodyTd --center">
                                         Atendida en sitio
                                     </td>
-                    
+
                                     <td class="tabla01__tbodyTd --center">
                                         Juan Pérez
                                     </td>
-                    
+
                                     <td class="tabla01__tbodyTd --center">
                                         555-0456
                                     </td>
-                    
+
                                 </tr>
                             </tbody>
                         </table>
-                        
+
                     </div>
                 </div>
                 <p class="sdr mb--0">Mostrando registros 1 a 10, de 751</p>
@@ -1191,7 +1255,8 @@
                 </div>
 
                 <div class="--center mt--16">
-                    <button type="button" class="boton__secundario mx--auto boton--verde">Exportar datos <img src="./assets/icons-base/ico-descargar.svg" alt=""></button>
+                    <button type="button" class="boton__secundario mx--auto boton--verde">Exportar datos <img
+                            src="./assets/icons-base/ico-descargar.svg" alt=""></button>
                 </div>
             </section>
 
@@ -1204,11 +1269,11 @@
                     <div class="search--field search--field--100">
                         <label class="oculto" for="filtross">Filtrar por nombre o folio de la persona.</label>
                         <div class="form-item-wrapper">
-   
+
                             <img src="./assets/icons-base/search.svg" alt="" aria-hidden="true">
 
-                            <input type="text" class="form-item buscar" placeholder="Filtra por nombre o folio de la persona."
-                                id="filtross">
+                            <input type="text" class="form-item buscar"
+                                placeholder="Filtra por nombre o folio de la persona." id="filtross">
                             <button type="button" class="clear-button">
                                 <span class="oculto">Borrar</span>
                                 <img src="./assets/icons-base/misuse--outline.svg" alt="" aria-hidden="true">
@@ -1237,7 +1302,7 @@
                                             </button>
                                         </div>
                                     </th>
-                    
+
                                     <th scope="col" class="tabla01__theadTh">
                                         <div>
                                             <span>Nombre</span>
@@ -1249,7 +1314,7 @@
                                             </button>
                                         </div>
                                     </th>
-                                    
+
                                     <th scope="col" class="tabla01__theadTh">
                                         <div>
                                             <span>Sexo</span>
@@ -1261,7 +1326,7 @@
                                             </button>
                                         </div>
                                     </th>
-                    
+
                                     <th scope="col" class="tabla01__theadTh">
                                         <div>
                                             <span>Edad</span>
@@ -1273,7 +1338,7 @@
                                             </button>
                                         </div>
                                     </th>
-                    
+
                                     <th scope="col" class="tabla01__theadTh">
                                         <div>
                                             <span>Estatus de la víctima</span>
@@ -1285,7 +1350,7 @@
                                             </button>
                                         </div>
                                     </th>
-                    
+
                                     <th scope="col" class="tabla01__theadTh">
                                         <div>
                                             <span>Contacto</span>
@@ -1297,7 +1362,7 @@
                                             </button>
                                         </div>
                                     </th>
-                    
+
                                     <th scope="col" class="tabla01__theadTh">
                                         <div>
                                             <span>Número de contacto</span>
@@ -1321,8 +1386,8 @@
                                             </button>
                                         </div>
                                     </th>
-                                    
-                    
+
+
                                 </tr>
                             </thead>
                             <tbody>
@@ -1330,30 +1395,30 @@
                                     <td class="tabla01__tbodyTd --center">
                                         PME380607P35
                                     </td>
-                    
+
                                     <td class="tabla01__tbodyTd --center">
                                         Verónica S. Castro
                                     </td>
-                    
+
                                     <td class="tabla01__tbodyTd --center">
                                         F
                                     </td>
-                    
+
                                     <td class="tabla01__tbodyTd --center">
                                         32
                                     </td>
-                    
+
                                     <td class="tabla01__tbodyTd --center">
                                         <span class="pildora pildora--error borde--no">
                                             <span class="pildora--dot"></span>
                                             Fallecida
                                         </span>
                                     </td>
-                    
+
                                     <td class="tabla01__tbodyTd --center">
                                         Juan Pérez
                                     </td>
-                    
+
                                     <td class="tabla01__tbodyTd --center">
                                         555-0456
                                     </td>
@@ -1364,36 +1429,36 @@
                                             Sistema
                                         </span>
                                     </td>
-                    
+
                                 </tr>
                                 <tr class="tabla01__tbodyTr">
                                     <td class="tabla01__tbodyTd --center">
                                         PME380607P35
                                     </td>
-                    
+
                                     <td class="tabla01__tbodyTd --center">
                                         Verónica S. Castro
                                     </td>
-                    
+
                                     <td class="tabla01__tbodyTd --center">
                                         F
                                     </td>
-                    
+
                                     <td class="tabla01__tbodyTd --center">
                                         32
                                     </td>
-                    
+
                                     <td class="tabla01__tbodyTd --center">
                                         <span class="pildora pildora--error borde--no">
                                             <span class="pildora--dot"></span>
                                             Fallecida
                                         </span>
                                     </td>
-                    
+
                                     <td class="tabla01__tbodyTd --center">
                                         Juan Pérez
                                     </td>
-                    
+
                                     <td class="tabla01__tbodyTd --center">
                                         555-0456
                                     </td>
@@ -1404,11 +1469,11 @@
                                             Chatbot
                                         </span>
                                     </td>
-                    
+
                                 </tr>
                             </tbody>
                         </table>
-                        
+
                     </div>
                 </div>
                 <p class="sdr mb--0">Mostrando registros 1 a 10, de 751</p>
@@ -1441,266 +1506,170 @@
                 </div>
 
                 <div class="--center mt--16">
-                    <button type="button" class="boton__secundario mx--auto boton--verde">Exportar datos <img src="./assets/icons-base/ico-descargar.svg" alt=""></button>
+                    <button type="button" class="boton__secundario mx--auto boton--verde">Exportar datos <img
+                            src="./assets/icons-base/ico-descargar.svg" alt=""></button>
                 </div>
             </section>
 
         </main>
 
-<!-- FOOTER -->
-      <footer class="footer">
-        <div class="footer__contenedor">
-          <!-- ESCUDO DEL GOBIERNO DE MEXICO -->
-          <div class="footer__mexico">
-            <img
-              src="https://framework-gb.cdn.gob.mx/gobmx/img/logo_blanco.svg"
-              alt="Gobierno de México"
-              class="footer__escudo"
-            />
-          </div>
-
-          <div class="footer__colCentral">
-            <!-- QUE ES GOB MX -->
-            <div class="footer__gobmx">
-              <details class="mexico__details" open>
-                <summary class="footer__summary footer__summary--gobmx">
-                  <span class="footer__tit">¿Qué es gob.mx?</span>
-                </summary>
-                <p class="mexico__detailsp">
-                  Es el portal único de trámites, información y participación
-                  ciudadana.
-                  <a
-                    href="https://www.gob.mx/que-es-gobmx"
-                    target="_blank"
-                    rel="noopener"
-                    title="El enlace abre en ventana nueva"
-                  >
-                    <b>Leer más</b>
-                  </a>
-                </p>
-              </details>
-            </div>
-
-            <!-- ENLACES -->
-            <div class="footer__enlaces">
-              <details class="mexico__details" open>
-                <summary class="footer__summary footer__summary--enlaces">
-                  <span class="footer__tit">Enlaces</span>
-                </summary>
-                <div class="footer__enlacesList">
-                  <div class="footer__enlacesCol1">
-                    <a
-                      class="footer__enlacesLink"
-                      href="https://datos.gob.mx/"
-                      target="_blank"
-                      rel="noopener"
-                      title="El enlace abre en ventana nueva"
-                    >
-                      Datos
-                    </a>
-
-                    <a
-                      class="footer__enlacesLink"
-                      href="https://www.gob.mx/inafed/acciones-y-programas/portal-de-obligaciones-de-transparencia-pot"
-                      target="_blank"
-                      rel="noopener"
-                      title="El enlace abre en ventana nueva"
-                    >
-                      Portal de Obligaciones de Transparencia
-                    </a>
-
-                    <a
-                      class="footer__enlacesLink"
-                      href="https://www.plataformadetransparencia.org.mx/Inicio"
-                      target="_blank"
-                      rel="noopener"
-                      title="El enlace abre en ventana nueva"
-                    >
-                      Plataforma Nacional de Transparencia
-                    </a>
-
-                    <a
-                      class="footer__enlacesLink"
-                      href="https://alertadores.buengobierno.gob.mx/"
-                      target="_blank"
-                      rel="noopener"
-                      title="El enlace abre en ventana nueva"
-                    >
-                      Alerta
-                    </a>
-                  </div>
-
-                  <div class="footer__enlacesCol2">
-                    <a
-                      class="footer__enlacesLink"
-                      href="#"
-                      target="_blank"
-                      rel="noopener"
-                      title="El enlace abre en ventana nueva"
-                    >
-                      Administraciones anteriores
-                    </a>
-
-                    <a
-                      class="footer__enlacesLink"
-                      href="https://www.gob.mx/accesibilidad"
-                      target="_blank"
-                      rel="noopener"
-                      title="El enlace abre en ventana nueva"
-                    >
-                      Declaración de accesibilidad
-                    </a>
-
-                    <a
-                      class="footer__enlacesLink"
-                      href="http://www.ordenjuridico.gob.mx/"
-                      target="_blank"
-                      rel="noopener"
-                      title="El enlace abre en ventana nueva"
-                    >
-                      Marco jurídico
-                    </a>
-
-                    <a
-                      class="footer__enlacesLink"
-                      href="#"
-                      target="_blank"
-                      rel="noopener"
-                      title="El enlace abre en ventana nueva"
-                    >
-                      Política de seguridad
-                    </a>
-
-                    <a
-                      class="footer__enlacesLink"
-                      href="https://www.gob.mx/terminos"
-                      target="_blank"
-                      rel="noopener"
-                      title="El enlace abre en ventana nueva"
-                    >
-                      Términos y condiciones
-                    </a>
-
-                    <a
-                      class="footer__enlacesLink"
-                      href="#"
-                      target="_blank"
-                      rel="noopener"
-                      title="El enlace abre en ventana nueva"
-                    >
-                      Aviso de privacidad
-                    </a>
-
-                    <a
-                      class="footer__enlacesLink"
-                      href="#"
-                      target="_blank"
-                      rel="noopener"
-                      title="El enlace abre en ventana nueva"
-                    >
-                      Aviso de privacidad simplificado
-                    </a>
-
-                    <a
-                      class="footer__enlacesLink"
-                      href="#"
-                      target="_blank"
-                      rel="noopener"
-                      title="El enlace abre en ventana nueva"
-                    >
-                      Mapa de sitio
-                    </a>
-                  </div>
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="footer__contenedor">
+                <!-- ESCUDO DEL GOBIERNO DE MEXICO -->
+                <div class="footer__mexico">
+                    <img src="https://framework-gb.cdn.gob.mx/gobmx/img/logo_blanco.svg" alt="Gobierno de México"
+                        class="footer__escudo" />
                 </div>
-              </details>
-            </div>
-          </div>
 
-          <!-- REDES -->
-          <div class="footer__redes">
-            <p class="footer__denuncia">
-              <a
-                href="https://sidec.buengobierno.gob.mx/#!/"
-                target="_blank"
-                rel="noopener"
-                title="El enlace abre en ventana nueva"
-              >
-                Denuncia contra servidores públicos
-              </a>
-            </p>
+                <div class="footer__colCentral">
+                    <!-- QUE ES GOB MX -->
+                    <div class="footer__gobmx">
+                        <details class="mexico__details" open>
+                            <summary class="footer__summary footer__summary--gobmx">
+                                <span class="footer__tit">¿Qué es gob.mx?</span>
+                            </summary>
+                            <p class="mexico__detailsp">
+                                Es el portal único de trámites, información y participación
+                                ciudadana.
+                                <a href="https://www.gob.mx/que-es-gobmx" target="_blank" rel="noopener"
+                                    title="El enlace abre en ventana nueva">
+                                    <b>Leer más</b>
+                                </a>
+                            </p>
+                        </details>
+                    </div>
 
-            <div class="footer__siguenosCont">
-              <p class="footer__siguenosTit">Síguenos en</p>
-              <ul class="footer__redes__ul">
-                <li>
-                  <a
-                    target="_blank"
-                    rel="noopener"
-                    title="El enlace abre en ventana nueva"
-                    href="https://www.facebook.com/gobmexico"
-                    aria-label="Facebook de Presidencia"
-                  >
-                    <img alt="Facebook" src="assets/icons-base/facebook.svg" />
-                  </a>
-                </li>
-                <li>
-                  <a
-                    target="_blank"
-                    rel="noopener"
-                    title="El enlace abre en ventana nueva"
-                    href="https://twitter.com/GobiernoMX"
-                    aria-label="Twitter de Presidencia"
-                  >
-                    <img alt="Twitter" src="assets/icons-base/twitter-x.svg" />
-                  </a>
-                </li>
-                <li>
-                  <a
-                    target="_blank"
-                    rel="noopener"
-                    title="El enlace abre en ventana nueva"
-                    href="https://www.instagram.com/gobmexico/"
-                    aria-label="Instagram de Presidencia"
-                  >
-                    <img
-                      alt="instagram"
-                      src="assets/icons-base/instagram.svg"
-                    />
-                  </a>
-                </li>
-                <li>
-                  <a
-                    target="_blank"
-                    rel="noopener"
-                    title="El enlace abre en ventana nueva"
-                    href="https://www.youtube.com/@gobiernodemexico"
-                    aria-label="Youtube de Presidencia"
-                  >
-                    <img alt="youtube" src="assets/icons-base/youtube.svg" />
-                  </a>
-                </li>
-              </ul>
-            </div>
+                    <!-- ENLACES -->
+                    <div class="footer__enlaces">
+                        <details class="mexico__details" open>
+                            <summary class="footer__summary footer__summary--enlaces">
+                                <span class="footer__tit">Enlaces</span>
+                            </summary>
+                            <div class="footer__enlacesList">
+                                <div class="footer__enlacesCol1">
+                                    <a class="footer__enlacesLink" href="https://datos.gob.mx/" target="_blank"
+                                        rel="noopener" title="El enlace abre en ventana nueva">
+                                        Datos
+                                    </a>
 
-            <div class="footer__079">
-              <div class="footer__079col1">
-                <img
-                  src="assets/icons-base/footer-flor.svg"
-                  alt=""
-                  class="footer__079img"
-                />
-                <span class="footer__079num">079</span>
-              </div>
-              <div class="footer__079info">
-                <span class="footer__079txt"
-                  >Comunícate, <br />
-                  estamos para ayudarte</span
-                >
-              </div>
+                                    <a class="footer__enlacesLink"
+                                        href="https://www.gob.mx/inafed/acciones-y-programas/portal-de-obligaciones-de-transparencia-pot"
+                                        target="_blank" rel="noopener" title="El enlace abre en ventana nueva">
+                                        Portal de Obligaciones de Transparencia
+                                    </a>
+
+                                    <a class="footer__enlacesLink"
+                                        href="https://www.plataformadetransparencia.org.mx/Inicio" target="_blank"
+                                        rel="noopener" title="El enlace abre en ventana nueva">
+                                        Plataforma Nacional de Transparencia
+                                    </a>
+
+                                    <a class="footer__enlacesLink" href="https://alertadores.buengobierno.gob.mx/"
+                                        target="_blank" rel="noopener" title="El enlace abre en ventana nueva">
+                                        Alerta
+                                    </a>
+                                </div>
+
+                                <div class="footer__enlacesCol2">
+                                    <a class="footer__enlacesLink" href="#" target="_blank" rel="noopener"
+                                        title="El enlace abre en ventana nueva">
+                                        Administraciones anteriores
+                                    </a>
+
+                                    <a class="footer__enlacesLink" href="https://www.gob.mx/accesibilidad"
+                                        target="_blank" rel="noopener" title="El enlace abre en ventana nueva">
+                                        Declaración de accesibilidad
+                                    </a>
+
+                                    <a class="footer__enlacesLink" href="http://www.ordenjuridico.gob.mx/"
+                                        target="_blank" rel="noopener" title="El enlace abre en ventana nueva">
+                                        Marco jurídico
+                                    </a>
+
+                                    <a class="footer__enlacesLink" href="#" target="_blank" rel="noopener"
+                                        title="El enlace abre en ventana nueva">
+                                        Política de seguridad
+                                    </a>
+
+                                    <a class="footer__enlacesLink" href="https://www.gob.mx/terminos" target="_blank"
+                                        rel="noopener" title="El enlace abre en ventana nueva">
+                                        Términos y condiciones
+                                    </a>
+
+                                    <a class="footer__enlacesLink" href="#" target="_blank" rel="noopener"
+                                        title="El enlace abre en ventana nueva">
+                                        Aviso de privacidad
+                                    </a>
+
+                                    <a class="footer__enlacesLink" href="#" target="_blank" rel="noopener"
+                                        title="El enlace abre en ventana nueva">
+                                        Aviso de privacidad simplificado
+                                    </a>
+
+                                    <a class="footer__enlacesLink" href="#" target="_blank" rel="noopener"
+                                        title="El enlace abre en ventana nueva">
+                                        Mapa de sitio
+                                    </a>
+                                </div>
+                            </div>
+                        </details>
+                    </div>
+                </div>
+
+                <!-- REDES -->
+                <div class="footer__redes">
+                    <p class="footer__denuncia">
+                        <a href="https://sidec.buengobierno.gob.mx/#!/" target="_blank" rel="noopener"
+                            title="El enlace abre en ventana nueva">
+                            Denuncia contra servidores públicos
+                        </a>
+                    </p>
+
+                    <div class="footer__siguenosCont">
+                        <p class="footer__siguenosTit">Síguenos en</p>
+                        <ul class="footer__redes__ul">
+                            <li>
+                                <a target="_blank" rel="noopener" title="El enlace abre en ventana nueva"
+                                    href="https://www.facebook.com/gobmexico" aria-label="Facebook de Presidencia">
+                                    <img alt="Facebook" src="assets/icons-base/facebook.svg" />
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" rel="noopener" title="El enlace abre en ventana nueva"
+                                    href="https://twitter.com/GobiernoMX" aria-label="Twitter de Presidencia">
+                                    <img alt="Twitter" src="assets/icons-base/twitter-x.svg" />
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" rel="noopener" title="El enlace abre en ventana nueva"
+                                    href="https://www.instagram.com/gobmexico/" aria-label="Instagram de Presidencia">
+                                    <img alt="instagram" src="assets/icons-base/instagram.svg" />
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" rel="noopener" title="El enlace abre en ventana nueva"
+                                    href="https://www.youtube.com/@gobiernodemexico"
+                                    aria-label="Youtube de Presidencia">
+                                    <img alt="youtube" src="assets/icons-base/youtube.svg" />
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__079">
+                        <div class="footer__079col1">
+                            <img src="assets/icons-base/footer-flor.svg" alt="" class="footer__079img" />
+                            <span class="footer__079num">079</span>
+                        </div>
+                        <div class="footer__079info">
+                            <span class="footer__079txt">Comunícate, <br />
+                                estamos para ayudarte</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </footer>
+        </footer>
 
 
 

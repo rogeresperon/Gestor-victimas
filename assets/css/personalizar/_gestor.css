@@ -28,8 +28,10 @@
 .fichaTotales__x100 { border-left:1px solid var(--neutro500); padding-left:4px;}
 
 /*siniestros*/
-.siniestroTipo__circulo { border-radius:50px; background:var(--pverde600); display:flex; align-items:center; justify-content:center; width:24px; height:24px; border:solid 2px var(--pverde200)}
+.siniestroTipo__circulo { border-radius:50px; display:flex; align-items:center; justify-content:center; width:24px; height:24px; }
 .siniestroTipo__icono { filter:invert(1); width:12px; height:12px;}
+.siniestroTipo--verde { background:var(--pverde600); border:solid 2px var(--pverde200)}
+.siniestroTipo--guinda { background:var(--pguinda900); border:solid 2px var(--pguinda200)}
 
 /*mapa__filtros*/
 .mapa__section { display:flex; gap:32px;}
